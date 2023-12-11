@@ -1,0 +1,114 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "_last_modified": "1699860099883348",
+      "analytics_profile_ref": "https://10.41.134.130/api/analyticsprofile/analyticsprofile-99e37db9-dddb-4a80-b895-dd0e8ef90982",
+      "append_port": "NON_DEFAULT_80_443",
+      "capacity_estimation": false,
+      "capacity_estimation_ttfb_thresh": 0,
+      "cloud_ref": "https://10.41.134.130/api/cloud/cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+      "connection_ramp_duration": 10,
+      "default_server_port": 80,
+      "delete_server_on_dns_refresh": true,
+      "enable_http2": false,
+      "enabled": true,
+      "fewest_tasks_feedback_delay": 10,
+      "graceful_disable_timeout": 1,
+      "health_monitor_refs": [
+        "https://10.41.134.130/api/healthmonitor/healthmonitor-b6183be4-5e72-47b6-b25b-612ddc2cd825"
+      ],
+      "host_check_enabled": false,
+      "http2_properties": {
+        "max_http2_control_frames_per_connection": 0,
+        "max_http2_header_field_size": 4096
+      },
+      "ignore_server_port": false,
+      "inline_health_monitor": true,
+      "lb_algo_rr_per_se": false,
+      "lb_algorithm": "LB_ALGORITHM_LEAST_CONNECTIONS",
+      "lb_algorithm_core_nonaffinity": 2,
+      "lb_algorithm_hash": "LB_ALGORITHM_CONSISTENT_HASH_SOURCE_IP_ADDRESS",
+      "lookup_server_by_name": false,
+      "max_concurrent_connections_per_server": 0,
+      "name": "ansible-pool1",
+      "pool_type": "POOL_TYPE_GENERIC_APP",
+      "request_queue_depth": 128,
+      "request_queue_enabled": false,
+      "rewrite_host_header_to_server_name": false,
+      "rewrite_host_header_to_sni": false,
+      "routing_pool": false,
+      "server_disable_type": "DISALLOW_NEW_CONNECTION",
+      "server_timeout": 0,
+      "servers": [
+        {
+          "discovered_networks": [
+            {
+              "network_ref": "https://10.41.134.130/api/network/dvportgroup-184-cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+              "subnet": [
+                {
+                  "ip_addr": {
+                    "addr": "100.64.130.0",
+                    "type": "V4"
+                  },
+                  "mask": 24
+                }
+              ]
+            }
+          ],
+          "enabled": true,
+          "external_uuid": "backend_vmw-0",
+          "hostname": "100.64.130.203",
+          "ip": {
+            "addr": "100.64.130.203",
+            "type": "V4"
+          },
+          "nw_ref": "https://10.41.134.130/api/vimgrnwruntime/dvportgroup-184-cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+          "ratio": 1,
+          "resolve_server_by_dns": false,
+          "rewrite_host_header": false,
+          "static": false,
+          "verify_network": false,
+          "vm_ref": "https://10.41.134.130/api/vimgrvmruntime/vm-420178c7-6806-f902-bf46-ffccb76ce773"
+        },
+        {
+          "discovered_networks": [
+            {
+              "network_ref": "https://10.41.134.130/api/network/dvportgroup-184-cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+              "subnet": [
+                {
+                  "ip_addr": {
+                    "addr": "100.64.130.0",
+                    "type": "V4"
+                  },
+                  "mask": 24
+                }
+              ]
+            }
+          ],
+          "enabled": true,
+          "external_uuid": "backend_vmw-1",
+          "hostname": "100.64.130.204",
+          "ip": {
+            "addr": "100.64.130.204",
+            "type": "V4"
+          },
+          "nw_ref": "https://10.41.134.130/api/vimgrnwruntime/dvportgroup-184-cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+          "ratio": 1,
+          "resolve_server_by_dns": false,
+          "rewrite_host_header": false,
+          "static": false,
+          "verify_network": false,
+          "vm_ref": "https://10.41.134.130/api/vimgrvmruntime/vm-42010a37-5918-ddae-c728-61cbb5f771dd"
+        }
+      ],
+      "sni_enabled": true,
+      "tenant_ref": "https://10.41.134.130/api/tenant/admin",
+      "url": "https://10.41.134.130/api/pool/pool-9d153392-eb5a-4e75-8d01-4d91b552d13c",
+      "use_service_port": false,
+      "use_service_ssl_mode": false,
+      "uuid": "pool-9d153392-eb5a-4e75-8d01-4d91b552d13c",
+      "vrf_ref": "https://10.41.134.130/api/vrfcontext/vrfcontext-1a223f3f-b79b-4a39-9bc5-c72ccfd382c0"
+    }
+  ]
+}

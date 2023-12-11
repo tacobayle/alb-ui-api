@@ -1,0 +1,9 @@
+[
+  "System-Default-Cert",
+  "System-Default-Cert-EC",
+  "System-Default-Portal-Cert",
+  "System-Default-Portal-Cert-EC256",
+  "System-Default-Root-CA",
+  "System-Default-Secure-Channel-Cert",
+  "tanzu-cert"
+]

@@ -1,0 +1,3029 @@
+------------------ DC1
+++++ retrieve cert url
+  HTTP GET API call to https://10.41.134.178/api/sslkeyandcertificate
+{
+  "count": 7,
+  "results": [
+    {
+      "_last_modified": "1699015293064246",
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDRTCCAi2gAwIBAgIUMHVF7MGbd4kQYZT2h3AU8+4a0R4wDQYJKoZIhvcNAQEL\nBQAwHjEcMBoGA1UEAwwTU3lzdGVtIERlZmF1bHQgQ2VydDAeFw0yMzExMDMxMjQx\nMzJaFw0zMzEwMzExMjQxMzJaMB4xHDAaBgNVBAMME1N5c3RlbSBEZWZhdWx0IENl\ncnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDUu+81NOBXd2vcaMY+\nQK1zKf0o401orjgzvi1kFxlj5gyDXrpl13/9Q7Nb76rZPwVrpCoTSlt4z7ylNe9T\njMnrtBCvBdP6sNlk05pHWai4yPMuynSuMh9cpVE/PjZwOq/Obz/Ldn3JokCYxZ7I\nU5boUEDAtum787dLq9d7F4qWSYv1i13K1K8VwEuao4H9Sr59qEGTf5Ho03i4tv4p\nwdGbJT/onevTsVeXGCRBg7l17cwzKyC7uzTU2oQ36wsAOb5eSEks8rLY5QpID8Fy\npBf68ZyANdqmQRqgbE9hCiHB8vJTARysnsCHWvDeOFx67xKQFLIT8IxaKZ8/Ssxp\naKmHAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wg\nR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBS+i1EcBmHAXbKBH37mdxKm\nOKMmXDAfBgNVHSMEGDAWgBS+i1EcBmHAXbKBH37mdxKmOKMmXDANBgkqhkiG9w0B\nAQsFAAOCAQEAFLXOHAkCNlWfeUrEw2WDqq2Ta/HdjQiHq+3B/o6AzJTwbINQ/28B\nA2v8uNPd8NZBGljK3Vnfsv55kEGv3n6C+XSC5GKSYYxwHv9Ykuk6uF8xV1Pr1e3h\nFmDrh39plKAbzNhK+utjPga6tsrJXWWK3GhwfLcpjEXHmNLemZfAirpNeV0mF0tJ\nEEfF4XKFvP33LcvdoikpBO9m9zb8qBLPTQf62cgqDLCvAKH1oVxOYDkm9BjdMccN\nKSmAojpV3Ob5NU4LxyCQpOY8pDG2snUvTIcMDczJQ6ldwLh5X5O7/MuGZQsOxLJs\nzqhG+eijRT2m/vE9+AAo/3s6HSev+vgFBg==\n-----END CERTIFICATE-----\n",
+        "days_until_expire": 3650,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=AF:88:C8:B1:A3:54:BE:4A:FE:88:4F:1A:4B:06:E7:7B:B1:33:F5:83\n",
+        "issuer": {
+          "common_name": "System Default Cert",
+          "distinguished_name": "CN=System Default Cert"
+        },
+        "not_after": "2033-10-31 12:41:32",
+        "not_before": "2023-11-03 12:41:32",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LvvNTTgV3dr3GjGPkCt\ncyn9KONNaK44M74tZBcZY+YMg166Zdd//UOzW++q2T8Fa6QqE0pbeM+8pTXvU4zJ\n67QQrwXT+rDZZNOaR1mouMjzLsp0rjIfXKVRPz42cDqvzm8/y3Z9yaJAmMWeyFOW\n6FBAwLbpu/O3S6vXexeKlkmL9YtdytSvFcBLmqOB/Uq+fahBk3+R6NN4uLb+KcHR\nmyU/6J3r07FXlxgkQYO5de3MMysgu7s01NqEN+sLADm+XkhJLPKy2OUKSA/BcqQX\n+vGcgDXapkEaoGxPYQohwfLyUwEcrJ7Ah1rw3jhceu8SkBSyE/CMWimfP0rMaWip\nhwIDAQAB\n-----END PUBLIC KEY-----\n",
+        "self_signed": true,
+        "serial_number": "276646835499488498534879069753069613136232501534",
+        "signature_algorithm": "sha256WithRSAEncryption",
+        "subject": {
+          "common_name": "System Default Cert",
+          "distinguished_name": "CN=System Default Cert"
+        },
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number:\n            30:75:45:ec:c1:9b:77:89:10:61:94:f6:87:70:14:f3:ee:1a:d1:1e\n        Signature Algorithm: sha256WithRSAEncryption\n        Issuer: CN=System Default Cert\n        Validity\n            Not Before: Nov  3 12:41:32 2023 GMT\n            Not After : Oct 31 12:41:32 2033 GMT\n        Subject: CN=System Default Cert\n        Subject Public Key Info:\n            Public Key Algorithm: rsaEncryption\n                RSA Public-Key: (2048 bit)\n                Modulus:\n                    00:d4:bb:ef:35:34:e0:57:77:6b:dc:68:c6:3e:40:\n                    ad:73:29:fd:28:e3:4d:68:ae:38:33:be:2d:64:17:\n                    19:63:e6:0c:83:5e:ba:65:d7:7f:fd:43:b3:5b:ef:\n                    aa:d9:3f:05:6b:a4:2a:13:4a:5b:78:cf:bc:a5:35:\n                    ef:53:8c:c9:eb:b4:10:af:05:d3:fa:b0:d9:64:d3:\n                    9a:47:59:a8:b8:c8:f3:2e:ca:74:ae:32:1f:5c:a5:\n                    51:3f:3e:36:70:3a:af:ce:6f:3f:cb:76:7d:c9:a2:\n                    40:98:c5:9e:c8:53:96:e8:50:40:c0:b6:e9:bb:f3:\n                    b7:4b:ab:d7:7b:17:8a:96:49:8b:f5:8b:5d:ca:d4:\n                    af:15:c0:4b:9a:a3:81:fd:4a:be:7d:a8:41:93:7f:\n                    91:e8:d3:78:b8:b6:fe:29:c1:d1:9b:25:3f:e8:9d:\n                    eb:d3:b1:57:97:18:24:41:83:b9:75:ed:cc:33:2b:\n                    20:bb:bb:34:d4:da:84:37:eb:0b:00:39:be:5e:48:\n                    49:2c:f2:b2:d8:e5:0a:48:0f:c1:72:a4:17:fa:f1:\n                    9c:80:35:da:a6:41:1a:a0:6c:4f:61:0a:21:c1:f2:\n                    f2:53:01:1c:ac:9e:c0:87:5a:f0:de:38:5c:7a:ef:\n                    12:90:14:b2:13:f0:8c:5a:29:9f:3f:4a:cc:69:68:\n                    a9:87\n                Exponent: 65537 (0x10001)\n        X509v3 extensions:\n            X509v3 Basic Constraints: \n                CA:FALSE\n            Netscape Comment: \n                OpenSSL Generated Certificate\n            X509v3 Subject Key Identifier: \n                BE:8B:51:1C:06:61:C0:5D:B2:81:1F:7E:E6:77:12:A6:38:A3:26:5C\n            X509v3 Authority Key Identifier: \n                keyid:BE:8B:51:1C:06:61:C0:5D:B2:81:1F:7E:E6:77:12:A6:38:A3:26:5C\n\n    Signature Algorithm: sha256WithRSAEncryption\n         14:b5:ce:1c:09:02:36:55:9f:79:4a:c4:c3:65:83:aa:ad:93:\n         6b:f1:dd:8d:08:87:ab:ed:c1:fe:8e:80:cc:94:f0:6c:83:50:\n         ff:6f:01:03:6b:fc:b8:d3:dd:f0:d6:41:1a:58:ca:dd:59:df:\n         b2:fe:79:90:41:af:de:7e:82:f9:74:82:e4:62:92:61:8c:70:\n         1e:ff:58:92:e9:3a:b8:5f:31:57:53:eb:d5:ed:e1:16:60:eb:\n         87:7f:69:94:a0:1b:cc:d8:4a:fa:eb:63:3e:06:ba:b6:ca:c9:\n         5d:65:8a:dc:68:70:7c:b7:29:8c:45:c7:98:d2:de:99:97:c0:\n         8a:ba:4d:79:5d:26:17:4b:49:10:47:c5:e1:72:85:bc:fd:f7:\n         2d:cb:dd:a2:29:29:04:ef:66:f7:36:fc:a8:12:cf:4d:07:fa:\n         d9:c8:2a:0c:b0:af:00:a1:f5:a1:5c:4e:60:39:26:f4:18:dd:\n         31:c7:0d:29:29:80:a2:3a:55:dc:e6:f9:35:4e:0b:c7:20:90:\n         a4:e6:3c:a4:31:b6:b2:75:2f:4c:87:0c:0d:cc:c9:43:a9:5d:\n         c0:b8:79:5f:93:bb:fc:cb:86:65:0b:0e:c4:b2:6c:ce:a8:46:\n         f9:e8:a3:45:3d:a6:fe:f1:3d:f8:00:28:ff:7b:3a:1d:27:af:\n         fa:f8:05:06\n",
+        "version": "2"
+      },
+      "certificate_base64": false,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": false,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_RSA",
+        "rsa_params": {
+          "exponent": 65537,
+          "key_size": "SSL_KEY_2048_BITS"
+        }
+      },
+      "name": "System-Default-Cert",
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_VIRTUALSERVICE",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e",
+      "uuid": "sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+    },
+    {
+      "_last_modified": "1699015293299041",
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIBvzCCAWWgAwIBAgIUMeffMe4cMDjMc9Uh8m2EFiTZtfAwCgYIKoZIzj0EAwIw\nITEfMB0GA1UEAwwWU3lzdGVtIERlZmF1bHQgRUMgQ2VydDAeFw0yMzExMDMxMjQx\nMzNaFw0zMzEwMzExMjQxMzNaMCExHzAdBgNVBAMMFlN5c3RlbSBEZWZhdWx0IEVD\nIENlcnQwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQDRV6it6/KGnnfKqaWpuke\n0ihbI1HSl0e7NXlaF4RDjdJTonoSlCIaOeKX10AKGFrAfEwj5uXZpn0n/EiK5zVj\no3sweTAJBgNVHRMEAjAAMCwGCWCGSAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRl\nZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUskO631zkyBgRd1uDpDTDz7jSY8EwHwYD\nVR0jBBgwFoAUskO631zkyBgRd1uDpDTDz7jSY8EwCgYIKoZIzj0EAwIDSAAwRQIh\nALc6flL72jZdNWNz2MzTW2E9OmOrl9SG1r3GO6UMti4GAiAc6vPGNzpb0E3Iqi8k\nmfA3KGpCPHgMDvOoERxHj9BQAA==\n-----END CERTIFICATE-----\n",
+        "days_until_expire": 3650,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=31:8A:B7:64:99:6A:D9:51:68:56:CB:6D:4B:51:C8:A6:17:A7:2B:9A\n",
+        "issuer": {
+          "common_name": "System Default EC Cert",
+          "distinguished_name": "CN=System Default EC Cert"
+        },
+        "not_after": "2033-10-31 12:41:33",
+        "not_before": "2023-11-03 12:41:33",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEA0Veorevyhp53yqmlqbpHtIoWyNR\n0pdHuzV5WheEQ43SU6J6EpQiGjnil9dAChhawHxMI+bl2aZ9J/xIiuc1Yw==\n-----END PUBLIC KEY-----\n",
+        "self_signed": true,
+        "serial_number": "284911462941330097658667711734798081931735578096",
+        "signature_algorithm": "ecdsa-with-SHA256",
+        "subject": {
+          "common_name": "System Default EC Cert",
+          "distinguished_name": "CN=System Default EC Cert"
+        },
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number:\n            31:e7:df:31:ee:1c:30:38:cc:73:d5:21:f2:6d:84:16:24:d9:b5:f0\n        Signature Algorithm: ecdsa-with-SHA256\n        Issuer: CN=System Default EC Cert\n        Validity\n            Not Before: Nov  3 12:41:33 2023 GMT\n            Not After : Oct 31 12:41:33 2033 GMT\n        Subject: CN=System Default EC Cert\n        Subject Public Key Info:\n            Public Key Algorithm: id-ecPublicKey\n                Public-Key: (256 bit)\n                pub:\n                    04:03:45:5e:a2:b7:af:ca:1a:79:df:2a:a6:96:a6:\n                    e9:1e:d2:28:5b:23:51:d2:97:47:bb:35:79:5a:17:\n                    84:43:8d:d2:53:a2:7a:12:94:22:1a:39:e2:97:d7:\n                    40:0a:18:5a:c0:7c:4c:23:e6:e5:d9:a6:7d:27:fc:\n                    48:8a:e7:35:63\n                ASN1 OID: prime256v1\n                NIST CURVE: P-256\n        X509v3 extensions:\n            X509v3 Basic Constraints: \n                CA:FALSE\n            Netscape Comment: \n                OpenSSL Generated Certificate\n            X509v3 Subject Key Identifier: \n                B2:43:BA:DF:5C:E4:C8:18:11:77:5B:83:A4:34:C3:CF:B8:D2:63:C1\n            X509v3 Authority Key Identifier: \n                keyid:B2:43:BA:DF:5C:E4:C8:18:11:77:5B:83:A4:34:C3:CF:B8:D2:63:C1\n\n    Signature Algorithm: ecdsa-with-SHA256\n         30:45:02:21:00:b7:3a:7e:52:fb:da:36:5d:35:63:73:d8:cc:\n         d3:5b:61:3d:3a:63:ab:97:d4:86:d6:bd:c6:3b:a5:0c:b6:2e:\n         06:02:20:1c:ea:f3:c6:37:3a:5b:d0:4d:c8:aa:2f:24:99:f0:\n         37:28:6a:42:3c:78:0c:0e:f3:a8:11:1c:47:8f:d0:50:00\n",
+        "version": "2"
+      },
+      "certificate_base64": false,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": false,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_EC",
+        "ec_params": {
+          "curve": "SSL_KEY_EC_CURVE_SECP256R1"
+        }
+      },
+      "name": "System-Default-Cert-EC",
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_VIRTUALSERVICE",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-5ddf0fc6-1d57-4a50-aa48-41eccb51867b",
+      "uuid": "sslkeyandcertificate-5ddf0fc6-1d57-4a50-aa48-41eccb51867b"
+    },
+    {
+      "_last_modified": "1699015293649081",
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDRTCCAi2gAwIBAgIUAMIaFfXdP3Dm4n4W7UxMnKIjP4AwDQYJKoZIhvcNAQEL\nBQAwHjEcMBoGA1UEAwwTRGVmYXVsdCBQb3J0YWwgQ2VydDAeFw0yMzExMDMxMjQx\nMzNaFw0zMzEwMzExMjQxMzNaMB4xHDAaBgNVBAMME0RlZmF1bHQgUG9ydGFsIENl\ncnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDlPFCO21BLIbUo5mTl\nUROb6hw6DUWE3AAnOdP1skoMuaCDPxpjmZx6xc7mLkfyFHKn2mwsOwiPD0J5Av9Y\nvqn+si4bN3PW1TFsno+YetVJ8S3eWap3RhM2G0IOWKzmy034+1GjFDaH9IoWVFd8\n/muXvW9D8ch2Reus5JI6m1SLjWNBsEZsuIREMY1SoHYOgyCESRyDIzZbroGPsr6a\nAUSR2HCMhgXhGJ8TJWuf/+qbJm4dw4odArvpU5KgTtRJxV03NLgLDc9UHysXobf4\nps6p42nlz7ppxtfLpMrpypL6NuiBfxeYdfMTJOJQ3f6isVvUhQMxPPAejj93VAU+\nCqUPAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wg\nR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSu7HPOQe6RMlhSjP1bOiy6\nvkRudDAfBgNVHSMEGDAWgBSu7HPOQe6RMlhSjP1bOiy6vkRudDANBgkqhkiG9w0B\nAQsFAAOCAQEAT84LUPd/qRK3l6yVPbk0Id9sMEIrn4cxIV2oXm9naryU6yeZ0o42\n0AyPFfpwpr9erajoQAZtnWxoqELYj5w/akCGv6Rpt+ul+xmLn8Lr9RWmtAu9aPe4\nov7W7hiz6JeXwzlaD9NT32u2nbAocaU4iPX4r/CXwa56q/Vv6Xter3LikDaNniv9\nIqr/tka+nIwFeaSLBBowVPmSUuZQsGogJg+inSDGCW6TyI4V0Ex1RyuQrbFgnmYy\n7/ERV/FmEHQqiGJTgUyOvdRW8xJcIS3aKuk/0OsOu6Ee+J/IJpe2DEN260bkzw/U\nJa32IobG/qzHiD6OEOZPSWnpBj2HaVjFOQ==\n-----END CERTIFICATE-----\n",
+        "days_until_expire": 3650,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=8A:D9:D7:52:E5:C1:8E:99:58:FC:41:6B:77:EE:EE:2A:19:AC:BA:8D\n",
+        "issuer": {
+          "common_name": "Default Portal Cert",
+          "distinguished_name": "CN=Default Portal Cert"
+        },
+        "not_after": "2033-10-31 12:41:33",
+        "not_before": "2023-11-03 12:41:33",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5TxQjttQSyG1KOZk5VET\nm+ocOg1FhNwAJznT9bJKDLmggz8aY5mcesXO5i5H8hRyp9psLDsIjw9CeQL/WL6p\n/rIuGzdz1tUxbJ6PmHrVSfEt3lmqd0YTNhtCDlis5stN+PtRoxQ2h/SKFlRXfP5r\nl71vQ/HIdkXrrOSSOptUi41jQbBGbLiERDGNUqB2DoMghEkcgyM2W66Bj7K+mgFE\nkdhwjIYF4RifEyVrn//qmyZuHcOKHQK76VOSoE7UScVdNzS4Cw3PVB8rF6G3+KbO\nqeNp5c+6acbXy6TK6cqS+jbogX8XmHXzEyTiUN3+orFb1IUDMTzwHo4/d1QFPgql\nDwIDAQAB\n-----END PUBLIC KEY-----\n",
+        "self_signed": true,
+        "serial_number": "4328616960688515305433656652574701977631670144",
+        "signature_algorithm": "sha256WithRSAEncryption",
+        "subject": {
+          "common_name": "Default Portal Cert",
+          "distinguished_name": "CN=Default Portal Cert"
+        },
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number:\n            c2:1a:15:f5:dd:3f:70:e6:e2:7e:16:ed:4c:4c:9c:a2:23:3f:80\n        Signature Algorithm: sha256WithRSAEncryption\n        Issuer: CN=Default Portal Cert\n        Validity\n            Not Before: Nov  3 12:41:33 2023 GMT\n            Not After : Oct 31 12:41:33 2033 GMT\n        Subject: CN=Default Portal Cert\n        Subject Public Key Info:\n            Public Key Algorithm: rsaEncryption\n                RSA Public-Key: (2048 bit)\n                Modulus:\n                    00:e5:3c:50:8e:db:50:4b:21:b5:28:e6:64:e5:51:\n                    13:9b:ea:1c:3a:0d:45:84:dc:00:27:39:d3:f5:b2:\n                    4a:0c:b9:a0:83:3f:1a:63:99:9c:7a:c5:ce:e6:2e:\n                    47:f2:14:72:a7:da:6c:2c:3b:08:8f:0f:42:79:02:\n                    ff:58:be:a9:fe:b2:2e:1b:37:73:d6:d5:31:6c:9e:\n                    8f:98:7a:d5:49:f1:2d:de:59:aa:77:46:13:36:1b:\n                    42:0e:58:ac:e6:cb:4d:f8:fb:51:a3:14:36:87:f4:\n                    8a:16:54:57:7c:fe:6b:97:bd:6f:43:f1:c8:76:45:\n                    eb:ac:e4:92:3a:9b:54:8b:8d:63:41:b0:46:6c:b8:\n                    84:44:31:8d:52:a0:76:0e:83:20:84:49:1c:83:23:\n                    36:5b:ae:81:8f:b2:be:9a:01:44:91:d8:70:8c:86:\n                    05:e1:18:9f:13:25:6b:9f:ff:ea:9b:26:6e:1d:c3:\n                    8a:1d:02:bb:e9:53:92:a0:4e:d4:49:c5:5d:37:34:\n                    b8:0b:0d:cf:54:1f:2b:17:a1:b7:f8:a6:ce:a9:e3:\n                    69:e5:cf:ba:69:c6:d7:cb:a4:ca:e9:ca:92:fa:36:\n                    e8:81:7f:17:98:75:f3:13:24:e2:50:dd:fe:a2:b1:\n                    5b:d4:85:03:31:3c:f0:1e:8e:3f:77:54:05:3e:0a:\n                    a5:0f\n                Exponent: 65537 (0x10001)\n        X509v3 extensions:\n            X509v3 Basic Constraints: \n                CA:FALSE\n            Netscape Comment: \n                OpenSSL Generated Certificate\n            X509v3 Subject Key Identifier: \n                AE:EC:73:CE:41:EE:91:32:58:52:8C:FD:5B:3A:2C:BA:BE:44:6E:74\n            X509v3 Authority Key Identifier: \n                keyid:AE:EC:73:CE:41:EE:91:32:58:52:8C:FD:5B:3A:2C:BA:BE:44:6E:74\n\n    Signature Algorithm: sha256WithRSAEncryption\n         4f:ce:0b:50:f7:7f:a9:12:b7:97:ac:95:3d:b9:34:21:df:6c:\n         30:42:2b:9f:87:31:21:5d:a8:5e:6f:67:6a:bc:94:eb:27:99:\n         d2:8e:36:d0:0c:8f:15:fa:70:a6:bf:5e:ad:a8:e8:40:06:6d:\n         9d:6c:68:a8:42:d8:8f:9c:3f:6a:40:86:bf:a4:69:b7:eb:a5:\n         fb:19:8b:9f:c2:eb:f5:15:a6:b4:0b:bd:68:f7:b8:a2:fe:d6:\n         ee:18:b3:e8:97:97:c3:39:5a:0f:d3:53:df:6b:b6:9d:b0:28:\n         71:a5:38:88:f5:f8:af:f0:97:c1:ae:7a:ab:f5:6f:e9:7b:5e:\n         af:72:e2:90:36:8d:9e:2b:fd:22:aa:ff:b6:46:be:9c:8c:05:\n         79:a4:8b:04:1a:30:54:f9:92:52:e6:50:b0:6a:20:26:0f:a2:\n         9d:20:c6:09:6e:93:c8:8e:15:d0:4c:75:47:2b:90:ad:b1:60:\n         9e:66:32:ef:f1:11:57:f1:66:10:74:2a:88:62:53:81:4c:8e:\n         bd:d4:56:f3:12:5c:21:2d:da:2a:e9:3f:d0:eb:0e:bb:a1:1e:\n         f8:9f:c8:26:97:b6:0c:43:76:eb:46:e4:cf:0f:d4:25:ad:f6:\n         22:86:c6:fe:ac:c7:88:3e:8e:10:e6:4f:49:69:e9:06:3d:87:\n         69:58:c5:39\n",
+        "version": "2"
+      },
+      "certificate_base64": false,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": false,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_RSA",
+        "rsa_params": {
+          "exponent": 65537,
+          "key_size": "SSL_KEY_2048_BITS"
+        }
+      },
+      "name": "System-Default-Portal-Cert",
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_SYSTEM",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-dfbdf151-5ea9-407b-b6cc-a6edf5c0b1d3",
+      "uuid": "sslkeyandcertificate-dfbdf151-5ea9-407b-b6cc-a6edf5c0b1d3"
+    },
+    {
+      "_last_modified": "1699015293875324",
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIBvzCCAWWgAwIBAgIUJyM4bUJl19qS1hdCi++RWb9zQIUwCgYIKoZIzj0EAwIw\nITEfMB0GA1UEAwwWRGVmYXVsdCBQb3J0YWwgRUMgQ2VydDAeFw0yMzExMDMxMjQx\nMzNaFw0zMzEwMzExMjQxMzNaMCExHzAdBgNVBAMMFkRlZmF1bHQgUG9ydGFsIEVD\nIENlcnQwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATeWsp5mekqhjasKOWSSOpr\neUTaINuc+JmEmQqsqWCtNep8aF/2MBMtFTG14ynv4ZkMx3NNMHgclw61sDk5Ruu3\no3sweTAJBgNVHRMEAjAAMCwGCWCGSAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRl\nZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQULk/o/IiqG62gLcdIgEp3X11Hu/0wHwYD\nVR0jBBgwFoAULk/o/IiqG62gLcdIgEp3X11Hu/0wCgYIKoZIzj0EAwIDSAAwRQIh\nANn/7I6D2No47ZNFoucGFt10MwZJbXx33qvc3NDUP2p9AiBBqvWsDiKOZIn1IywX\noxyazRdDSp3n3AJRzw+chYkQoQ==\n-----END CERTIFICATE-----\n",
+        "days_until_expire": 3650,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=C5:74:2D:06:3D:8B:A0:5F:A4:99:36:CD:FD:B0:EC:B1:58:42:89:AC\n",
+        "issuer": {
+          "common_name": "Default Portal EC Cert",
+          "distinguished_name": "CN=Default Portal EC Cert"
+        },
+        "not_after": "2033-10-31 12:41:33",
+        "not_before": "2023-11-03 12:41:33",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3lrKeZnpKoY2rCjlkkjqa3lE2iDb\nnPiZhJkKrKlgrTXqfGhf9jATLRUxteMp7+GZDMdzTTB4HJcOtbA5OUbrtw==\n-----END PUBLIC KEY-----\n",
+        "self_signed": true,
+        "serial_number": "223436081611126333950915399642079439428825333893",
+        "signature_algorithm": "ecdsa-with-SHA256",
+        "subject": {
+          "common_name": "Default Portal EC Cert",
+          "distinguished_name": "CN=Default Portal EC Cert"
+        },
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number:\n            27:23:38:6d:42:65:d7:da:92:d6:17:42:8b:ef:91:59:bf:73:40:85\n        Signature Algorithm: ecdsa-with-SHA256\n        Issuer: CN=Default Portal EC Cert\n        Validity\n            Not Before: Nov  3 12:41:33 2023 GMT\n            Not After : Oct 31 12:41:33 2033 GMT\n        Subject: CN=Default Portal EC Cert\n        Subject Public Key Info:\n            Public Key Algorithm: id-ecPublicKey\n                Public-Key: (256 bit)\n                pub:\n                    04:de:5a:ca:79:99:e9:2a:86:36:ac:28:e5:92:48:\n                    ea:6b:79:44:da:20:db:9c:f8:99:84:99:0a:ac:a9:\n                    60:ad:35:ea:7c:68:5f:f6:30:13:2d:15:31:b5:e3:\n                    29:ef:e1:99:0c:c7:73:4d:30:78:1c:97:0e:b5:b0:\n                    39:39:46:eb:b7\n                ASN1 OID: prime256v1\n                NIST CURVE: P-256\n        X509v3 extensions:\n            X509v3 Basic Constraints: \n                CA:FALSE\n            Netscape Comment: \n                OpenSSL Generated Certificate\n            X509v3 Subject Key Identifier: \n                2E:4F:E8:FC:88:AA:1B:AD:A0:2D:C7:48:80:4A:77:5F:5D:47:BB:FD\n            X509v3 Authority Key Identifier: \n                keyid:2E:4F:E8:FC:88:AA:1B:AD:A0:2D:C7:48:80:4A:77:5F:5D:47:BB:FD\n\n    Signature Algorithm: ecdsa-with-SHA256\n         30:45:02:21:00:d9:ff:ec:8e:83:d8:da:38:ed:93:45:a2:e7:\n         06:16:dd:74:33:06:49:6d:7c:77:de:ab:dc:dc:d0:d4:3f:6a:\n         7d:02:20:41:aa:f5:ac:0e:22:8e:64:89:f5:23:2c:17:a3:1c:\n         9a:cd:17:43:4a:9d:e7:dc:02:51:cf:0f:9c:85:89:10:a1\n",
+        "version": "2"
+      },
+      "certificate_base64": false,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": false,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_EC",
+        "ec_params": {
+          "curve": "SSL_KEY_EC_CURVE_SECP256R1"
+        }
+      },
+      "name": "System-Default-Portal-Cert-EC256",
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_SYSTEM",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-5653da9a-520e-4328-87b5-fa7c1de201e4",
+      "uuid": "sslkeyandcertificate-5653da9a-520e-4328-87b5-fa7c1de201e4"
+    },
+    {
+      "_last_modified": "1699015294069032",
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIF+DCCA+CgAwIBAgIBATANBgkqhkiG9w0BAQsFADBgMQswCQYDVQQGEwJVUzET\nMBEGA1UECAwKQ2FsaWZvcm5pYTEUMBIGA1UEBwwLU2FudGEgQ2xhcmExEzARBgNV\nBAoMCkNvbnRyb2xsZXIxETAPBgNVBAMMCGNhLmxvY2FsMB4XDTcwMDEwMTAwMDAw\nMFoXDTMzMTAzMTEyNDEwMFowYDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlm\nb3JuaWExFDASBgNVBAcMC1NhbnRhIENsYXJhMRMwEQYDVQQKDApDb250cm9sbGVy\nMREwDwYDVQQDDAhjYS5sb2NhbDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoC\nggIBALKb9N0FMG/U2LLgOE+oZXoFcwOCKek/NXcaSXwX72F9NGBqDPHOrthfSHZ7\nZpWDYioAx1zPgrYX4JtvFMEsQR6gf2HW7OmPWmubFdnnMQ3y05zu9Ebq8T3mBIpt\n5YiQ3H7IpHNBBSx35Zf6C2sYvR6IuwFvAHiO7GIDxkNoqLuBOVxzJhjcXNAVPQDR\nRhN71O+a0Ak73Kwr+3LhFO9juhtO4O3f5NtlBlby2LcuiB3XndXav5nrGLFik+sf\nwDccpabr0LB2lwptWpaGmdNNzCYx7Eg3WWZSSDcCRFazHH1AWNE2ARzBVyIIxz3g\n+1b26y+FnBh2PdJ5iObjrRe9FOM9/vXWg1JfV5QNO/6AXwPCQpzXRavWhJhPzfu2\ncg9bzxiFGKTeE2bh1kV1fKVPBJ1U8IUtTsIz+JQLRg11VIsU/zri/8fr9KkGr84O\nAZfGhkJZL694n3wbCAiyWFEo1RJeHiG2WoA6n9iK4+Ghpv++UrrVt9va4nm9RxCs\nWk5gi/CTBQXdsm5MSpsdDz+xvrLpguVsnJUph1RWx1yBAQvKDOD3PAaANUldx6Wc\nlfBo7e6T7AHeG+CPNl2Euna4LxBaTNxhf9CEQap2rQ2wpdGjoavtHqftwYbUiVmj\n3lvAr5Bq6D0zmFbGZLK0o19MHEgydmFNrShdp2eC8Ch38rIPAgMBAAGjgbwwgbkw\nHQYDVR0OBBYEFDpgkU+WVmrqggZOqAWDW50XYaZiMIGJBgNVHSMEgYEwf4AUOmCR\nT5ZWauqCBk6oBYNbnRdhpmKhZKRiMGAxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApD\nYWxpZm9ybmlhMRQwEgYDVQQHDAtTYW50YSBDbGFyYTETMBEGA1UECgwKQ29udHJv\nbGxlcjERMA8GA1UEAwwIY2EubG9jYWyCAQEwDAYDVR0TBAUwAwEB/zANBgkqhkiG\n9w0BAQsFAAOCAgEAEO4IyatmexZG7LaYdghWzwVQqllFOyucJZjr5lbhYTjBpSXO\nAp0CsgtcA1r44WC6Oj7SMtNGxDRAVYtkcoZsf8iI8jgSvhdK+NBFlA3k4Q33e/zs\nV1Kl+CmzDny8wHbnMghE85da3yFFOcebA47CMNOmpm4FwpHr9WS0HEFL96AS1BGK\nHG+IGtvzgVFALqF9x3WXKjuJBJgXVpZct0x9oa8dFic6nYQJluy4tz5ZRXWCeuhl\n84Y6QYqwc35NROTVcPYr7YK1wNKergCHXt2Ly/qhUmvq3oCf2kgaajSczAmXDVa0\nAHBkq/PfKpo93Cshe2lQWh+JllGIAOeBSV7q8C/7+fmIrsmURuFcq+qrzTtYoCpZ\n/EpmUFWanmz4egxYTUWz/xzGudW7ci8rFV+0OiidI+2vFcp+KGUPlBugkYTGN59V\nyWMlw32SXZaYYGXoloubltsyp5I3xEqaediQcYWGdmS+633CmmPcVfzAh15NjlX6\ne+K51iNP/MNp8rUUWWLbJ1vk9Ob4R0/H6oAcND3bFUsh/gp3zPtirh9y987ugoFe\nAj41wzt2A2kNKon95fPJISn2NX7YS1VGjJNGceLjgnEID/S9VG5kaIRLmSWnqi4k\nPVckeJMHMnLIua5tDD+J6Uy4gguaJq2lnwQFBBYGoshNWLisAYWAfjTIL4M=\n-----END CERTIFICATE-----",
+        "days_until_expire": 365,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=92:FC:9A:9F:E9:7F:5A:02:FA:BE:8D:6E:84:06:99:28:B5:7C:A7:60\n",
+        "issuer": {
+          "common_name": "ca.local",
+          "country": "US",
+          "distinguished_name": "C=US, ST=California, L=Santa Clara, O=Controller, CN=ca.local",
+          "locality": "Santa Clara",
+          "organization": "Controller",
+          "state": "California"
+        },
+        "not_after": "2033-10-31 12:41:00",
+        "not_before": "1970-01-01 00:00:00",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAspv03QUwb9TYsuA4T6hl\negVzA4Ip6T81dxpJfBfvYX00YGoM8c6u2F9IdntmlYNiKgDHXM+Cthfgm28UwSxB\nHqB/Ydbs6Y9aa5sV2ecxDfLTnO70RurxPeYEim3liJDcfsikc0EFLHfll/oLaxi9\nHoi7AW8AeI7sYgPGQ2iou4E5XHMmGNxc0BU9ANFGE3vU75rQCTvcrCv7cuEU72O6\nG07g7d/k22UGVvLYty6IHded1dq/mesYsWKT6x/ANxylpuvQsHaXCm1aloaZ003M\nJjHsSDdZZlJINwJEVrMcfUBY0TYBHMFXIgjHPeD7VvbrL4WcGHY90nmI5uOtF70U\n4z3+9daDUl9XlA07/oBfA8JCnNdFq9aEmE/N+7ZyD1vPGIUYpN4TZuHWRXV8pU8E\nnVTwhS1OwjP4lAtGDXVUixT/OuL/x+v0qQavzg4Bl8aGQlkvr3iffBsICLJYUSjV\nEl4eIbZagDqf2Irj4aGm/75SutW329rieb1HEKxaTmCL8JMFBd2ybkxKmx0PP7G+\nsumC5WyclSmHVFbHXIEBC8oM4Pc8BoA1SV3HpZyV8Gjt7pPsAd4b4I82XYS6drgv\nEFpM3GF/0IRBqnatDbCl0aOhq+0ep+3BhtSJWaPeW8CvkGroPTOYVsZksrSjX0wc\nSDJ2YU2tKF2nZ4LwKHfysg8CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+        "self_signed": true,
+        "serial_number": "1",
+        "signature_algorithm": "sha256WithRSAEncryption",
+        "subject": {
+          "common_name": "ca.local",
+          "country": "US",
+          "distinguished_name": "C=US, ST=California, L=Santa Clara, O=Controller, CN=ca.local",
+          "locality": "Santa Clara",
+          "organization": "Controller",
+          "state": "California"
+        },
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number: 1 (0x1)\n        Signature Algorithm: sha256WithRSAEncryption\n        Issuer: C=US, ST=California, L=Santa Clara, O=Controller, CN=ca.local\n        Validity\n            Not Before: Jan  1 00:00:00 1970 GMT\n            Not After : Oct 31 12:41:00 2033 GMT\n        Subject: C=US, ST=California, L=Santa Clara, O=Controller, CN=ca.local\n        Subject Public Key Info:\n            Public Key Algorithm: rsaEncryption\n                RSA Public-Key: (4096 bit)\n                Modulus:\n                    00:b2:9b:f4:dd:05:30:6f:d4:d8:b2:e0:38:4f:a8:\n                    65:7a:05:73:03:82:29:e9:3f:35:77:1a:49:7c:17:\n                    ef:61:7d:34:60:6a:0c:f1:ce:ae:d8:5f:48:76:7b:\n                    66:95:83:62:2a:00:c7:5c:cf:82:b6:17:e0:9b:6f:\n                    14:c1:2c:41:1e:a0:7f:61:d6:ec:e9:8f:5a:6b:9b:\n                    15:d9:e7:31:0d:f2:d3:9c:ee:f4:46:ea:f1:3d:e6:\n                    04:8a:6d:e5:88:90:dc:7e:c8:a4:73:41:05:2c:77:\n                    e5:97:fa:0b:6b:18:bd:1e:88:bb:01:6f:00:78:8e:\n                    ec:62:03:c6:43:68:a8:bb:81:39:5c:73:26:18:dc:\n                    5c:d0:15:3d:00:d1:46:13:7b:d4:ef:9a:d0:09:3b:\n                    dc:ac:2b:fb:72:e1:14:ef:63:ba:1b:4e:e0:ed:df:\n                    e4:db:65:06:56:f2:d8:b7:2e:88:1d:d7:9d:d5:da:\n                    bf:99:eb:18:b1:62:93:eb:1f:c0:37:1c:a5:a6:eb:\n                    d0:b0:76:97:0a:6d:5a:96:86:99:d3:4d:cc:26:31:\n                    ec:48:37:59:66:52:48:37:02:44:56:b3:1c:7d:40:\n                    58:d1:36:01:1c:c1:57:22:08:c7:3d:e0:fb:56:f6:\n                    eb:2f:85:9c:18:76:3d:d2:79:88:e6:e3:ad:17:bd:\n                    14:e3:3d:fe:f5:d6:83:52:5f:57:94:0d:3b:fe:80:\n                    5f:03:c2:42:9c:d7:45:ab:d6:84:98:4f:cd:fb:b6:\n                    72:0f:5b:cf:18:85:18:a4:de:13:66:e1:d6:45:75:\n                    7c:a5:4f:04:9d:54:f0:85:2d:4e:c2:33:f8:94:0b:\n                    46:0d:75:54:8b:14:ff:3a:e2:ff:c7:eb:f4:a9:06:\n                    af:ce:0e:01:97:c6:86:42:59:2f:af:78:9f:7c:1b:\n                    08:08:b2:58:51:28:d5:12:5e:1e:21:b6:5a:80:3a:\n                    9f:d8:8a:e3:e1:a1:a6:ff:be:52:ba:d5:b7:db:da:\n                    e2:79:bd:47:10:ac:5a:4e:60:8b:f0:93:05:05:dd:\n                    b2:6e:4c:4a:9b:1d:0f:3f:b1:be:b2:e9:82:e5:6c:\n                    9c:95:29:87:54:56:c7:5c:81:01:0b:ca:0c:e0:f7:\n                    3c:06:80:35:49:5d:c7:a5:9c:95:f0:68:ed:ee:93:\n                    ec:01:de:1b:e0:8f:36:5d:84:ba:76:b8:2f:10:5a:\n                    4c:dc:61:7f:d0:84:41:aa:76:ad:0d:b0:a5:d1:a3:\n                    a1:ab:ed:1e:a7:ed:c1:86:d4:89:59:a3:de:5b:c0:\n                    af:90:6a:e8:3d:33:98:56:c6:64:b2:b4:a3:5f:4c:\n                    1c:48:32:76:61:4d:ad:28:5d:a7:67:82:f0:28:77:\n                    f2:b2:0f\n                Exponent: 65537 (0x10001)\n        X509v3 extensions:\n            X509v3 Subject Key Identifier: \n                3A:60:91:4F:96:56:6A:EA:82:06:4E:A8:05:83:5B:9D:17:61:A6:62\n            X509v3 Authority Key Identifier: \n                keyid:3A:60:91:4F:96:56:6A:EA:82:06:4E:A8:05:83:5B:9D:17:61:A6:62\n                DirName:/C=US/ST=California/L=Santa Clara/O=Controller/CN=ca.local\n                serial:01\n\n            X509v3 Basic Constraints: \n                CA:TRUE\n    Signature Algorithm: sha256WithRSAEncryption\n         10:ee:08:c9:ab:66:7b:16:46:ec:b6:98:76:08:56:cf:05:50:\n         aa:59:45:3b:2b:9c:25:98:eb:e6:56:e1:61:38:c1:a5:25:ce:\n         02:9d:02:b2:0b:5c:03:5a:f8:e1:60:ba:3a:3e:d2:32:d3:46:\n         c4:34:40:55:8b:64:72:86:6c:7f:c8:88:f2:38:12:be:17:4a:\n         f8:d0:45:94:0d:e4:e1:0d:f7:7b:fc:ec:57:52:a5:f8:29:b3:\n         0e:7c:bc:c0:76:e7:32:08:44:f3:97:5a:df:21:45:39:c7:9b:\n         03:8e:c2:30:d3:a6:a6:6e:05:c2:91:eb:f5:64:b4:1c:41:4b:\n         f7:a0:12:d4:11:8a:1c:6f:88:1a:db:f3:81:51:40:2e:a1:7d:\n         c7:75:97:2a:3b:89:04:98:17:56:96:5c:b7:4c:7d:a1:af:1d:\n         16:27:3a:9d:84:09:96:ec:b8:b7:3e:59:45:75:82:7a:e8:65:\n         f3:86:3a:41:8a:b0:73:7e:4d:44:e4:d5:70:f6:2b:ed:82:b5:\n         c0:d2:9e:ae:00:87:5e:dd:8b:cb:fa:a1:52:6b:ea:de:80:9f:\n         da:48:1a:6a:34:9c:cc:09:97:0d:56:b4:00:70:64:ab:f3:df:\n         2a:9a:3d:dc:2b:21:7b:69:50:5a:1f:89:96:51:88:00:e7:81:\n         49:5e:ea:f0:2f:fb:f9:f9:88:ae:c9:94:46:e1:5c:ab:ea:ab:\n         cd:3b:58:a0:2a:59:fc:4a:66:50:55:9a:9e:6c:f8:7a:0c:58:\n         4d:45:b3:ff:1c:c6:b9:d5:bb:72:2f:2b:15:5f:b4:3a:28:9d:\n         23:ed:af:15:ca:7e:28:65:0f:94:1b:a0:91:84:c6:37:9f:55:\n         c9:63:25:c3:7d:92:5d:96:98:60:65:e8:96:8b:9b:96:db:32:\n         a7:92:37:c4:4a:9a:79:d8:90:71:85:86:76:64:be:eb:7d:c2:\n         9a:63:dc:55:fc:c0:87:5e:4d:8e:55:fa:7b:e2:b9:d6:23:4f:\n         fc:c3:69:f2:b5:14:59:62:db:27:5b:e4:f4:e6:f8:47:4f:c7:\n         ea:80:1c:34:3d:db:15:4b:21:fe:0a:77:cc:fb:62:ae:1f:72:\n         f7:ce:ee:82:81:5e:02:3e:35:c3:3b:76:03:69:0d:2a:89:fd:\n         e5:f3:c9:21:29:f6:35:7e:d8:4b:55:46:8c:93:46:71:e2:e3:\n         82:71:08:0f:f4:bd:54:6e:64:68:84:4b:99:25:a7:aa:2e:24:\n         3d:57:24:78:93:07:32:72:c8:b9:ae:6d:0c:3f:89:e9:4c:b8:\n         82:0b:9a:26:ad:a5:9f:04:05:04:16:06:a2:c8:4d:58:b8:ac:\n         01:85:80:7e:34:c8:2f:83\n",
+        "version": "2"
+      },
+      "certificate_base64": false,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": false,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_RSA",
+        "rsa_params": {
+          "exponent": 65537,
+          "key_size": "SSL_KEY_4096_BITS"
+        }
+      },
+      "name": "System-Default-Root-CA",
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_CA",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-f383070d-27fe-44c0-b8ed-6f43dc1b5816",
+      "uuid": "sslkeyandcertificate-f383070d-27fe-44c0-b8ed-6f43dc1b5816"
+    },
+    {
+      "_last_modified": "1699015294493712",
+      "ca_certs": [
+        {
+          "ca_ref": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-f383070d-27fe-44c0-b8ed-6f43dc1b5816",
+          "name": "ca.local"
+        }
+      ],
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIGBTCCA+2gAwIBAgIBAjANBgkqhkiG9w0BAQsFADBgMQswCQYDVQQGEwJVUzET\nMBEGA1UECAwKQ2FsaWZvcm5pYTEUMBIGA1UEBwwLU2FudGEgQ2xhcmExEzARBgNV\nBAoMCkNvbnRyb2xsZXIxETAPBgNVBAMMCGNhLmxvY2FsMB4XDTcwMDEwMTAwMDAw\nMFoXDTMzMTAzMTEyNDEwMVowbTELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlm\nb3JuaWExFDASBgNVBAcMC1NhbnRhIENsYXJhMRMwEQYDVQQKDApDb250cm9sbGVy\nMR4wHAYDVQQDDBVub2RlLmNvbnRyb2xsZXIubG9jYWwwggIiMA0GCSqGSIb3DQEB\nAQUAA4ICDwAwggIKAoICAQDrN0h73zDZ+nBFrF7eQh8F8ioiseaOZt70Wn4DoX3E\nzjfxmkfmaI4E8sQZ8pQkY1y6TQ73a9gB+x6nJsB+q/YavjfUWlo3M+Pb9rZhTVkb\nkIxcKEHwlzXgM0DAWoyQWh2dlmHA/MjsnGAVOPsXaKKLA96h8aIQqXbVVaZu5xSr\nTfWBKCempVfPuBSa+o1VUkunflL3vTTuMc3r9S7S8lifXRpfofm2NJCE1Amohgdu\ne8vIdvwskued2/aGmlvakY8keDu6bK6L5ZBKF5dw7X22y5B6O1aQR0Ata+l/DWNf\nO8MNeZ9zF6y4dB2fH8R0VTfDZH9uNRbvQY8KKXLlmtcKBqj4RA6Ak73jblIS2PsR\n1vCKpuQ9cKpHNJDrdRksgaawDKzyMizSrvM9CQXae/6b1qeTsCIzCaRGuuqI9V40\nNlODUIqMiqFfnxLPfjmKVMjWTV9RjQnr7X9pmQB9evwwUa3YDV6yX5Zt/WQLRQ0P\niIMzorZeZZGN5e1n8g8MNRRHXpwDiLRxPrj0ymTJr1f7A3Yhm/HopP5/Gnckwil6\nIU5j5Ha7u63HujNzvwbOc3VVDsnNZ7iWc0E1NL38zOSFSC3MHpC14NRRbReKyGT0\n6uLqHAKJYu+aws4fnYfFgIbZJlB+tNdX43I+z0EEC2b0YH1K5kuSLQ4ckF3gNDi1\nVQIDAQABo4G8MIG5MB0GA1UdDgQWBBQl8f4Ia8ChcKrho6HDeqiAZj0lPjCBiQYD\nVR0jBIGBMH+AFDpgkU+WVmrqggZOqAWDW50XYaZioWSkYjBgMQswCQYDVQQGEwJV\nUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEUMBIGA1UEBwwLU2FudGEgQ2xhcmExEzAR\nBgNVBAoMCkNvbnRyb2xsZXIxETAPBgNVBAMMCGNhLmxvY2FsggEBMAwGA1UdEwQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggIBABDwA1jjsw2FPWFGMmEdhHn6RBlslgRx\nsIKpWOSevVFCyM8FZLollcQLaz7TI7Mv82WpJr40HEHLSlM5Rbk4bbBm0u8W4omY\nJOpP/XCIgS50Wzt1eMWOZTqu1ybkomcrIJGR9CuL73pKKpJW/SWb2+slmLup1EFI\n0cLkUnDK/T1wdw8W2syanGY7Xanm7gf+ovD9+B+UC1glUU+ssMvlkuC2TTQKhjHq\nvLuRsOCMioeyAsSqsNt5m7K/+KwTnZwxTLIodPrY1/08zJQQdUmFA5dgnC0mrH+D\nIu+oBJFLv1Tlspyzftdvn8qIxe9C5WyGwriYtXPvAlk8SlAFvS1et+svp074qpQ/\niJ4GGOKJm6u1wy694jJGLm55MF2aI06l0thqy0Mn1Q2tiajch+I+WULPOKbC8IPv\nT8UoZLxQcJt6nGB2PNHUhekAJ9XnTFXRcXtJFsbLKN1m6B+m/QbwmYPDIBV/YU6n\njPJtmYvAlb6YGW0IuNvaV0S4TN9zB62UwKkKGoHN3rYkwZlAu8qJKNWoFlwB6ZM2\nJe/3q5xDBljdIvQPvomS5TBnBnSql60vQS1jqJxQzpkdlCbMxfG8+Kk2ArwYDVlK\nlUldi+Z1jnBjBSLhoLXp3Of1aZbhN/+ZkGRw0fGXD/wLVtUwTfpUQLqS7cUoD5JP\n0UDFMXCzRHJH\n-----END CERTIFICATE-----",
+        "days_until_expire": 365,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=E3:5B:49:00:64:1B:D7:15:57:8A:31:CF:EB:67:68:E8:93:0F:56:82\n",
+        "issuer": {
+          "common_name": "ca.local",
+          "country": "US",
+          "distinguished_name": "C=US, ST=California, L=Santa Clara, O=Controller, CN=ca.local",
+          "locality": "Santa Clara",
+          "organization": "Controller",
+          "state": "California"
+        },
+        "not_after": "2033-10-31 12:41:01",
+        "not_before": "1970-01-01 00:00:00",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6zdIe98w2fpwRaxe3kIf\nBfIqIrHmjmbe9Fp+A6F9xM438ZpH5miOBPLEGfKUJGNcuk0O92vYAfsepybAfqv2\nGr431FpaNzPj2/a2YU1ZG5CMXChB8Jc14DNAwFqMkFodnZZhwPzI7JxgFTj7F2ii\niwPeofGiEKl21VWmbucUq031gSgnpqVXz7gUmvqNVVJLp35S97007jHN6/Uu0vJY\nn10aX6H5tjSQhNQJqIYHbnvLyHb8LJLnndv2hppb2pGPJHg7umyui+WQSheXcO19\ntsuQejtWkEdALWvpfw1jXzvDDXmfcxesuHQdnx/EdFU3w2R/bjUW70GPCily5ZrX\nCgao+EQOgJO9425SEtj7EdbwiqbkPXCqRzSQ63UZLIGmsAys8jIs0q7zPQkF2nv+\nm9ank7AiMwmkRrrqiPVeNDZTg1CKjIqhX58Sz345ilTI1k1fUY0J6+1/aZkAfXr8\nMFGt2A1esl+Wbf1kC0UND4iDM6K2XmWRjeXtZ/IPDDUUR16cA4i0cT649Mpkya9X\n+wN2IZvx6KT+fxp3JMIpeiFOY+R2u7utx7ozc78GznN1VQ7JzWe4lnNBNTS9/Mzk\nhUgtzB6QteDUUW0Xishk9Ori6hwCiWLvmsLOH52HxYCG2SZQfrTXV+NyPs9BBAtm\n9GB9SuZLki0OHJBd4DQ4tVUCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+        "self_signed": false,
+        "serial_number": "2",
+        "signature_algorithm": "sha256WithRSAEncryption",
+        "subject": {
+          "common_name": "node.controller.local",
+          "country": "US",
+          "distinguished_name": "C=US, ST=California, L=Santa Clara, O=Controller, CN=node.controller.local",
+          "locality": "Santa Clara",
+          "organization": "Controller",
+          "state": "California"
+        },
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number: 2 (0x2)\n        Signature Algorithm: sha256WithRSAEncryption\n        Issuer: C=US, ST=California, L=Santa Clara, O=Controller, CN=ca.local\n        Validity\n            Not Before: Jan  1 00:00:00 1970 GMT\n            Not After : Oct 31 12:41:01 2033 GMT\n        Subject: C=US, ST=California, L=Santa Clara, O=Controller, CN=node.controller.local\n        Subject Public Key Info:\n            Public Key Algorithm: rsaEncryption\n                RSA Public-Key: (4096 bit)\n                Modulus:\n                    00:eb:37:48:7b:df:30:d9:fa:70:45:ac:5e:de:42:\n                    1f:05:f2:2a:22:b1:e6:8e:66:de:f4:5a:7e:03:a1:\n                    7d:c4:ce:37:f1:9a:47:e6:68:8e:04:f2:c4:19:f2:\n                    94:24:63:5c:ba:4d:0e:f7:6b:d8:01:fb:1e:a7:26:\n                    c0:7e:ab:f6:1a:be:37:d4:5a:5a:37:33:e3:db:f6:\n                    b6:61:4d:59:1b:90:8c:5c:28:41:f0:97:35:e0:33:\n                    40:c0:5a:8c:90:5a:1d:9d:96:61:c0:fc:c8:ec:9c:\n                    60:15:38:fb:17:68:a2:8b:03:de:a1:f1:a2:10:a9:\n                    76:d5:55:a6:6e:e7:14:ab:4d:f5:81:28:27:a6:a5:\n                    57:cf:b8:14:9a:fa:8d:55:52:4b:a7:7e:52:f7:bd:\n                    34:ee:31:cd:eb:f5:2e:d2:f2:58:9f:5d:1a:5f:a1:\n                    f9:b6:34:90:84:d4:09:a8:86:07:6e:7b:cb:c8:76:\n                    fc:2c:92:e7:9d:db:f6:86:9a:5b:da:91:8f:24:78:\n                    3b:ba:6c:ae:8b:e5:90:4a:17:97:70:ed:7d:b6:cb:\n                    90:7a:3b:56:90:47:40:2d:6b:e9:7f:0d:63:5f:3b:\n                    c3:0d:79:9f:73:17:ac:b8:74:1d:9f:1f:c4:74:55:\n                    37:c3:64:7f:6e:35:16:ef:41:8f:0a:29:72:e5:9a:\n                    d7:0a:06:a8:f8:44:0e:80:93:bd:e3:6e:52:12:d8:\n                    fb:11:d6:f0:8a:a6:e4:3d:70:aa:47:34:90:eb:75:\n                    19:2c:81:a6:b0:0c:ac:f2:32:2c:d2:ae:f3:3d:09:\n                    05:da:7b:fe:9b:d6:a7:93:b0:22:33:09:a4:46:ba:\n                    ea:88:f5:5e:34:36:53:83:50:8a:8c:8a:a1:5f:9f:\n                    12:cf:7e:39:8a:54:c8:d6:4d:5f:51:8d:09:eb:ed:\n                    7f:69:99:00:7d:7a:fc:30:51:ad:d8:0d:5e:b2:5f:\n                    96:6d:fd:64:0b:45:0d:0f:88:83:33:a2:b6:5e:65:\n                    91:8d:e5:ed:67:f2:0f:0c:35:14:47:5e:9c:03:88:\n                    b4:71:3e:b8:f4:ca:64:c9:af:57:fb:03:76:21:9b:\n                    f1:e8:a4:fe:7f:1a:77:24:c2:29:7a:21:4e:63:e4:\n                    76:bb:bb:ad:c7:ba:33:73:bf:06:ce:73:75:55:0e:\n                    c9:cd:67:b8:96:73:41:35:34:bd:fc:cc:e4:85:48:\n                    2d:cc:1e:90:b5:e0:d4:51:6d:17:8a:c8:64:f4:ea:\n                    e2:ea:1c:02:89:62:ef:9a:c2:ce:1f:9d:87:c5:80:\n                    86:d9:26:50:7e:b4:d7:57:e3:72:3e:cf:41:04:0b:\n                    66:f4:60:7d:4a:e6:4b:92:2d:0e:1c:90:5d:e0:34:\n                    38:b5:55\n                Exponent: 65537 (0x10001)\n        X509v3 extensions:\n            X509v3 Subject Key Identifier: \n                25:F1:FE:08:6B:C0:A1:70:AA:E1:A3:A1:C3:7A:A8:80:66:3D:25:3E\n            X509v3 Authority Key Identifier: \n                keyid:3A:60:91:4F:96:56:6A:EA:82:06:4E:A8:05:83:5B:9D:17:61:A6:62\n                DirName:/C=US/ST=California/L=Santa Clara/O=Controller/CN=ca.local\n                serial:01\n\n            X509v3 Basic Constraints: \n                CA:TRUE\n    Signature Algorithm: sha256WithRSAEncryption\n         10:f0:03:58:e3:b3:0d:85:3d:61:46:32:61:1d:84:79:fa:44:\n         19:6c:96:04:71:b0:82:a9:58:e4:9e:bd:51:42:c8:cf:05:64:\n         ba:25:95:c4:0b:6b:3e:d3:23:b3:2f:f3:65:a9:26:be:34:1c:\n         41:cb:4a:53:39:45:b9:38:6d:b0:66:d2:ef:16:e2:89:98:24:\n         ea:4f:fd:70:88:81:2e:74:5b:3b:75:78:c5:8e:65:3a:ae:d7:\n         26:e4:a2:67:2b:20:91:91:f4:2b:8b:ef:7a:4a:2a:92:56:fd:\n         25:9b:db:eb:25:98:bb:a9:d4:41:48:d1:c2:e4:52:70:ca:fd:\n         3d:70:77:0f:16:da:cc:9a:9c:66:3b:5d:a9:e6:ee:07:fe:a2:\n         f0:fd:f8:1f:94:0b:58:25:51:4f:ac:b0:cb:e5:92:e0:b6:4d:\n         34:0a:86:31:ea:bc:bb:91:b0:e0:8c:8a:87:b2:02:c4:aa:b0:\n         db:79:9b:b2:bf:f8:ac:13:9d:9c:31:4c:b2:28:74:fa:d8:d7:\n         fd:3c:cc:94:10:75:49:85:03:97:60:9c:2d:26:ac:7f:83:22:\n         ef:a8:04:91:4b:bf:54:e5:b2:9c:b3:7e:d7:6f:9f:ca:88:c5:\n         ef:42:e5:6c:86:c2:b8:98:b5:73:ef:02:59:3c:4a:50:05:bd:\n         2d:5e:b7:eb:2f:a7:4e:f8:aa:94:3f:88:9e:06:18:e2:89:9b:\n         ab:b5:c3:2e:bd:e2:32:46:2e:6e:79:30:5d:9a:23:4e:a5:d2:\n         d8:6a:cb:43:27:d5:0d:ad:89:a8:dc:87:e2:3e:59:42:cf:38:\n         a6:c2:f0:83:ef:4f:c5:28:64:bc:50:70:9b:7a:9c:60:76:3c:\n         d1:d4:85:e9:00:27:d5:e7:4c:55:d1:71:7b:49:16:c6:cb:28:\n         dd:66:e8:1f:a6:fd:06:f0:99:83:c3:20:15:7f:61:4e:a7:8c:\n         f2:6d:99:8b:c0:95:be:98:19:6d:08:b8:db:da:57:44:b8:4c:\n         df:73:07:ad:94:c0:a9:0a:1a:81:cd:de:b6:24:c1:99:40:bb:\n         ca:89:28:d5:a8:16:5c:01:e9:93:36:25:ef:f7:ab:9c:43:06:\n         58:dd:22:f4:0f:be:89:92:e5:30:67:06:74:aa:97:ad:2f:41:\n         2d:63:a8:9c:50:ce:99:1d:94:26:cc:c5:f1:bc:f8:a9:36:02:\n         bc:18:0d:59:4a:95:49:5d:8b:e6:75:8e:70:63:05:22:e1:a0:\n         b5:e9:dc:e7:f5:69:96:e1:37:ff:99:90:64:70:d1:f1:97:0f:\n         fc:0b:56:d5:30:4d:fa:54:40:ba:92:ed:c5:28:0f:92:4f:d1:\n         40:c5:31:70:b3:44:72:47\n",
+        "version": "2"
+      },
+      "certificate_base64": false,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": false,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_RSA",
+        "rsa_params": {
+          "exponent": 65537,
+          "key_size": "SSL_KEY_4096_BITS"
+        }
+      },
+      "name": "System-Default-Secure-Channel-Cert",
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_SYSTEM",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-df7d60d2-b676-4615-8656-3d3cade2d607",
+      "uuid": "sslkeyandcertificate-df7d60d2-b676-4615-8656-3d3cade2d607"
+    },
+    {
+      "_last_modified": "1699016688624103",
+      "certificate": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIICzTCCAbWgAwIBAgIUJnj8VAHz+9OJbz57gl86gJu3gIQwDQYJKoZIhvcNAQEL\nBQAwFjEUMBIGA1UEAwwLYWxiLmFsYi5jb20wHhcNMjMxMTAzMTMwNDQ4WhcNMjQx\nMTAyMTMwNDQ4WjAWMRQwEgYDVQQDDAthbGIuYWxiLmNvbTCCASIwDQYJKoZIhvcN\nAQEBBQADggEPADCCAQoCggEBANgTA+LwIcDsp8RovmN1qojYOMDFkUN3p+EWq8aC\nwid/aksloanim65eZzOvhMytuCJ00gPa9b/3HvSqJ4F7BzZ2hE/g9SGE2vWN90jb\nC8TO0/yvTfWIyPnZH2j1S0UJs8uSZSSUuZvnEsu9Twa8QRuXvbHxkOmg/62CCLKR\nHPq++fTxEg+sQbwcbWgsOVqCCVFMYsK1Pj8zPuuJEpkBfaC5oZKzHPqRuVmUM+j3\nfPRx7tTdHClMmVwqIkzbIxwJn1fWDMgc83Io/FvY40ikjLwrizCxibcj5Kx0dtfw\nRpj/zoNRoopyr7I1cdFFhZvXT7Np9fam4G7c+1lSP/ogIHcCAwEAAaMTMBEwDwYD\nVR0RBAgwBocECimGsjANBgkqhkiG9w0BAQsFAAOCAQEA12nDPvxErgjN74CdLhqe\nt7tpienSIPs06cdMAQPrm1GOAnGx/UW7nhgA0rCYEkeZldxHzT/cSG62mL7Y1ovC\ni6iJZSrHPUJMSRGKD7JQ50OxcEZ68pIvz1C0Xpo2F5B70V9azNb5Bee0UiXWgx+p\nj+3YZnlex33ZT1AS+h8jZ3HTIg0kVOcjYTiGyneO86y20h8vOQskq1fIUSg81kMP\n420UVY8GSVRPU/agePTPAVsZ43uRuqqL2PzJmqFfJzEkWkiYy+r3NNR/PrKx5CXa\nMT22SJDw+lFNXmODHTKPUtl4CKRXR3LUMloFYWh1Uug55oozdyneybFZjCE/piMR\nGQ==\n-----END CERTIFICATE-----\n",
+        "days_until_expire": 365,
+        "expiry_status": "SSL_CERTIFICATE_GOOD",
+        "fingerprint": "SHA1 Fingerprint=26:82:4A:F4:3A:A6:13:AA:03:04:69:67:25:06:3E:C6:63:57:94:25",
+        "issuer": {
+          "common_name": "alb.alb.com",
+          "distinguished_name": "CN=alb.alb.com"
+        },
+        "not_after": "Nov  2 13:04:48 2024 GMT",
+        "not_before": "Nov  3 13:04:48 2023 GMT",
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2BMD4vAhwOynxGi+Y3Wq\niNg4wMWRQ3en4RarxoLCJ39qSyWhqeKbrl5nM6+EzK24InTSA9r1v/ce9KongXsH\nNnaET+D1IYTa9Y33SNsLxM7T/K9N9YjI+dkfaPVLRQmzy5JlJJS5m+cSy71PBrxB\nG5e9sfGQ6aD/rYIIspEc+r759PESD6xBvBxtaCw5WoIJUUxiwrU+PzM+64kSmQF9\noLmhkrMc+pG5WZQz6Pd89HHu1N0cKUyZXCoiTNsjHAmfV9YMyBzzcij8W9jjSKSM\nvCuLMLGJtyPkrHR21/BGmP/Og1GiinKvsjVx0UWFm9dPs2n19qbgbtz7WVI/+iAg\ndwIDAQAB\n-----END PUBLIC KEY-----\n",
+        "self_signed": true,
+        "serial_number": "219639719597499265415725251937438336186135838852",
+        "signature_algorithm": "sha256WithRSAEncryption",
+        "subject": {
+          "common_name": "alb.alb.com",
+          "distinguished_name": "CN=alb.alb.com"
+        },
+        "subject_alt_names": [
+          "10.41.134.178"
+        ],
+        "text": "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number:\n            26:78:fc:54:01:f3:fb:d3:89:6f:3e:7b:82:5f:3a:80:9b:b7:80:84\n        Signature Algorithm: sha256WithRSAEncryption\n        Issuer: CN = alb.alb.com\n        Validity\n            Not Before: Nov  3 13:04:48 2023 GMT\n            Not After : Nov  2 13:04:48 2024 GMT\n        Subject: CN = alb.alb.com\n        Subject Public Key Info:\n            Public Key Algorithm: rsaEncryption\n                RSA Public-Key: (2048 bit)\n                Modulus:\n                    00:d8:13:03:e2:f0:21:c0:ec:a7:c4:68:be:63:75:\n                    aa:88:d8:38:c0:c5:91:43:77:a7:e1:16:ab:c6:82:\n                    c2:27:7f:6a:4b:25:a1:a9:e2:9b:ae:5e:67:33:af:\n                    84:cc:ad:b8:22:74:d2:03:da:f5:bf:f7:1e:f4:aa:\n                    27:81:7b:07:36:76:84:4f:e0:f5:21:84:da:f5:8d:\n                    f7:48:db:0b:c4:ce:d3:fc:af:4d:f5:88:c8:f9:d9:\n                    1f:68:f5:4b:45:09:b3:cb:92:65:24:94:b9:9b:e7:\n                    12:cb:bd:4f:06:bc:41:1b:97:bd:b1:f1:90:e9:a0:\n                    ff:ad:82:08:b2:91:1c:fa:be:f9:f4:f1:12:0f:ac:\n                    41:bc:1c:6d:68:2c:39:5a:82:09:51:4c:62:c2:b5:\n                    3e:3f:33:3e:eb:89:12:99:01:7d:a0:b9:a1:92:b3:\n                    1c:fa:91:b9:59:94:33:e8:f7:7c:f4:71:ee:d4:dd:\n                    1c:29:4c:99:5c:2a:22:4c:db:23:1c:09:9f:57:d6:\n                    0c:c8:1c:f3:72:28:fc:5b:d8:e3:48:a4:8c:bc:2b:\n                    8b:30:b1:89:b7:23:e4:ac:74:76:d7:f0:46:98:ff:\n                    ce:83:51:a2:8a:72:af:b2:35:71:d1:45:85:9b:d7:\n                    4f:b3:69:f5:f6:a6:e0:6e:dc:fb:59:52:3f:fa:20:\n                    20:77\n                Exponent: 65537 (0x10001)\n        X509v3 extensions:\n            X509v3 Subject Alternative Name: \n                IP Address:10.41.134.178\n    Signature Algorithm: sha256WithRSAEncryption\n         d7:69:c3:3e:fc:44:ae:08:cd:ef:80:9d:2e:1a:9e:b7:bb:69:\n         89:e9:d2:20:fb:34:e9:c7:4c:01:03:eb:9b:51:8e:02:71:b1:\n         fd:45:bb:9e:18:00:d2:b0:98:12:47:99:95:dc:47:cd:3f:dc:\n         48:6e:b6:98:be:d8:d6:8b:c2:8b:a8:89:65:2a:c7:3d:42:4c:\n         49:11:8a:0f:b2:50:e7:43:b1:70:46:7a:f2:92:2f:cf:50:b4:\n         5e:9a:36:17:90:7b:d1:5f:5a:cc:d6:f9:05:e7:b4:52:25:d6:\n         83:1f:a9:8f:ed:d8:66:79:5e:c7:7d:d9:4f:50:12:fa:1f:23:\n         67:71:d3:22:0d:24:54:e7:23:61:38:86:ca:77:8e:f3:ac:b6:\n         d2:1f:2f:39:0b:24:ab:57:c8:51:28:3c:d6:43:0f:e3:6d:14:\n         55:8f:06:49:54:4f:53:f6:a0:78:f4:cf:01:5b:19:e3:7b:91:\n         ba:aa:8b:d8:fc:c9:9a:a1:5f:27:31:24:5a:48:98:cb:ea:f7:\n         34:d4:7f:3e:b2:b1:e4:25:da:31:3d:b6:48:90:f0:fa:51:4d:\n         5e:63:83:1d:32:8f:52:d9:78:08:a4:57:47:72:d4:32:5a:05:\n         61:68:75:52:e8:39:e6:8a:33:77:29:de:c9:b1:59:8c:21:3f:\n         a6:23:11:19\n",
+        "version": "3"
+      },
+      "certificate_base64": true,
+      "enable_ocsp_stapling": false,
+      "format": "SSL_PEM",
+      "import_key_to_hsm": false,
+      "is_federated": false,
+      "key": "\u003csensitive\u003e",
+      "key_base64": true,
+      "key_params": {
+        "algorithm": "SSL_KEY_ALGORITHM_RSA",
+        "rsa_params": {
+          "exponent": 65537,
+          "key_size": "SSL_KEY_2048_BITS"
+        }
+      },
+      "name": "tanzu-cert",
+      "ocsp_config": {
+        "failed_ocsp_jobs_retry_interval": 3600,
+        "max_tries": 10,
+        "ocsp_req_interval": 86400,
+        "url_action": "OCSP_RESPONDER_URL_FAILOVER"
+      },
+      "ocsp_error_status": "OCSP_ERR_CERTSTATUS_DISABLED",
+      "status": "SSL_CERTIFICATE_FINISHED",
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "type": "SSL_CERTIFICATE_TYPE_SYSTEM",
+      "url": "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-a2cbf285-640c-4aa6-897b-92031d3ce54e",
+      "uuid": "sslkeyandcertificate-a2cbf285-640c-4aa6-897b-92031d3ce54e"
+    }
+  ]
+}
+
+200    API call was successful
+  https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e
+  HTTP GET API call to https://10.41.134.178/api/virtualservice/?refers_to=sslkeyandcertificate:sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e&fields=name
+{
+  "count": 7,
+  "results": [
+    {
+      "marked_for_delete": false,
+      "name": "app1-hello-world-nsx-group",
+      "redis_db": 3,
+      "redis_port": 5021,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "dsS1xZFLPcbCnsGElxDpWg==",
+          "hmac_key": "Gu9JLSp8iBkIhsmzaFHLdw==",
+          "name": "d4adb42f-983f-4439-85a6-8e753f6e14a1"
+        },
+        {
+          "aes_key": "0+EaBtWxseai/4xPZlkZig==",
+          "hmac_key": "kvT8j3CbFAPh5ghPUnpHtw==",
+          "name": "64845d85-32b9-4c1c-9dca-c70b63d7cadb"
+        },
+        {
+          "aes_key": "9sgNGc0qhxs41wK96QXCug==",
+          "hmac_key": "YpOFpHqXhvfFpNKb6L+ccg==",
+          "name": "6c12f4af-43f7-4d76-8958-9292fdd53791"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-49fda50e-74ff-48f6-baf2-67696146af46",
+      "uuid": "virtualservice-49fda50e-74ff-48f6-baf2-67696146af46",
+      "version": 104,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 500860
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.501834",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.152075",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    },
+    {
+      "marked_for_delete": false,
+      "name": "app2-hello-world",
+      "redis_db": 4,
+      "redis_port": 5028,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "wjSOyT5LjUMo5oX3ENxQ4A==",
+          "hmac_key": "xMMEyTNyI3do43+U1YhRDg==",
+          "name": "817a2bd1-b266-4139-a445-571bac4859c4"
+        },
+        {
+          "aes_key": "wWgDb0VwdO4/VKGcrUEAIg==",
+          "hmac_key": "JC/n/5aixldiLs/02tY/KA==",
+          "name": "fb2c259f-cd42-484c-bd9b-c494792668d8"
+        },
+        {
+          "aes_key": "rv2HHzZ/wOEDMz+/w7Lf0w==",
+          "hmac_key": "GarDQDRErsvsPfGEN4ZX9w==",
+          "name": "e0a9ea79-013d-458d-acde-b6234396503f"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-7695c9c4-7f97-476b-8142-f2c8f6f4f157",
+      "uuid": "virtualservice-7695c9c4-7f97-476b-8142-f2c8f6f4f157",
+      "version": 95,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 506179
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.506916",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.206311",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    },
+    {
+      "marked_for_delete": false,
+      "name": "app3-avi",
+      "redis_db": 3,
+      "redis_port": 5022,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "LKhJkMz1d0QxJZ+MoHPB3A==",
+          "hmac_key": "5E4KmhQ9ZY3zyKHMcyvL3g==",
+          "name": "d42161c9-588b-4d98-822f-61225d588292"
+        },
+        {
+          "aes_key": "QzhZkvkC7a5z06KpFdEq3g==",
+          "hmac_key": "Omkbt87f55g7UHecS48TqQ==",
+          "name": "e1da7307-5df6-4b6b-88af-e97e3273b91a"
+        },
+        {
+          "aes_key": "JTHfux0KCQ7QlzWMSmSXWw==",
+          "hmac_key": "G9+XJOrWVfHOV9zLW1jMEA==",
+          "name": "fbf4362b-b355-4ff0-bc2f-54e113f92d2a"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-35f07621-8dba-4519-aedb-3778d9eb5221",
+      "uuid": "virtualservice-35f07621-8dba-4519-aedb-3778d9eb5221",
+      "version": 95,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 597782
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.598057",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.148840",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    },
+    {
+      "marked_for_delete": false,
+      "name": "app4-waf",
+      "redis_db": 14,
+      "redis_port": 5023,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "xHqSn3QXlOxEGWQE7fqE3A==",
+          "hmac_key": "tVHiMl0jtDdeTIlC0K5r6A==",
+          "name": "fa36d84c-e72c-4608-9d3f-54e611f98bae"
+        },
+        {
+          "aes_key": "zg8wtBwN9kTOBWXIKfgPtA==",
+          "hmac_key": "J79ScdgnANmpL56E7F9+Ag==",
+          "name": "7e5614c9-3324-48af-b6d4-7477605832af"
+        },
+        {
+          "aes_key": "709BUzMn/dcbjs+DEIvsOA==",
+          "hmac_key": "JIlFFPFEYoMDIcObT4v7DA==",
+          "name": "f22a84ab-b95d-4f3a-9999-3e4ea92f2acd"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-b34ed388-0524-43a7-bfaf-42aae5cce83f",
+      "uuid": "virtualservice-b34ed388-0524-43a7-bfaf-42aae5cce83f",
+      "version": 97,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 632659
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.633071",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.209616",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    },
+    {
+      "marked_for_delete": false,
+      "name": "app5-hello-world",
+      "redis_db": 4,
+      "redis_port": 5022,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "SfXIZwIXo/MFWyXyYB2YPQ==",
+          "hmac_key": "fJavdJXmJENJG0RDWTZhwg==",
+          "name": "2c019d4b-ab89-4ae6-ac21-52525d589728"
+        },
+        {
+          "aes_key": "O2UGw/Cu5PlE+dJTmTA5rA==",
+          "hmac_key": "MmH9LqMKSr0bq6Bf4ozOmQ==",
+          "name": "18a0346a-8a78-486a-ac59-784762691a87"
+        },
+        {
+          "aes_key": "oGTl2yFIiMxEkEqGyJ42tQ==",
+          "hmac_key": "Ywprlusg1cwQJMGLWRWSlA==",
+          "name": "76195883-393f-437b-bf21-f069fad41937"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-3a5f90fe-7969-4f7b-b16e-4379f2d17c28",
+      "uuid": "virtualservice-3a5f90fe-7969-4f7b-b16e-4379f2d17c28",
+      "version": 95,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 515314
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.516130",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.147532",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    },
+    {
+      "marked_for_delete": false,
+      "name": "app6-avi",
+      "redis_db": 0,
+      "redis_port": 5024,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "Hwg2dJLu9rKlHzDkmSZb7A==",
+          "hmac_key": "PVh49ZQqljdQV7lIhqkJcg==",
+          "name": "4ace3c16-cc1c-4b52-a921-b9d8eca4d8fd"
+        },
+        {
+          "aes_key": "gulH3ntTlZ1Ifn2GAb8jRA==",
+          "hmac_key": "2WFzFfNBqMfCW4QXFrSpyQ==",
+          "name": "81da0991-11ae-4166-a712-62c3bd30c496"
+        },
+        {
+          "aes_key": "y6y2iS2TaAu36MrawnXhqg==",
+          "hmac_key": "pZJHR7BJVc7cmSjljpsZ/Q==",
+          "name": "d46a87a7-c70b-4dc6-b928-5beb2ba05ba6"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-1bd0d6dd-f09c-4175-b37e-011d6bcd0afd",
+      "uuid": "virtualservice-1bd0d6dd-f09c-4175-b37e-011d6bcd0afd",
+      "version": 95,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 531635
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.532244",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.150511",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    },
+    {
+      "marked_for_delete": false,
+      "name": "app7-waf",
+      "redis_db": 8,
+      "redis_port": 5024,
+      "self_se_election": false,
+      "tls_ticket_key": [
+        {
+          "aes_key": "osGoppbJg+KTnAMq7oTLlQ==",
+          "hmac_key": "22KqeQSN78SBy7QxS18xwQ==",
+          "name": "d32442cc-ed47-472d-be3c-fd912c3497d2"
+        },
+        {
+          "aes_key": "LsclLFVGYh+C3AVfnMx7rQ==",
+          "hmac_key": "+DCUgY4X531s5/1mBQNm7Q==",
+          "name": "cc5912d6-40b9-4b1b-8666-af97d099e663"
+        },
+        {
+          "aes_key": "Ty2KBQWpKsXxbiiF73xEAg==",
+          "hmac_key": "HEgsOGk/kSrjAnCCFiuKJg==",
+          "name": "201ce71b-3201-4bb2-bb21-e42b2dc70278"
+        }
+      ],
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-7b3f30e9-dd0a-42bc-aa67-23142172e8bb",
+      "uuid": "virtualservice-7b3f30e9-dd0a-42bc-aa67-23142172e8bb",
+      "version": 96,
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 492179
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.493755",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.205777",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ]
+    }
+  ]
+}
+
+200    API call was successful
+{   "count": 7,   "results": [     {       "marked_for_delete": false,       "name": "app1-hello-world-nsx-group",       "redis_db": 3,       "redis_port": 5021,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "dsS1xZFLPcbCnsGElxDpWg==",           "hmac_key": "Gu9JLSp8iBkIhsmzaFHLdw==",           "name": "d4adb42f-983f-4439-85a6-8e753f6e14a1"         },         {           "aes_key": "0+EaBtWxseai/4xPZlkZig==",           "hmac_key": "kvT8j3CbFAPh5ghPUnpHtw==",           "name": "64845d85-32b9-4c1c-9dca-c70b63d7cadb"         },         {           "aes_key": "9sgNGc0qhxs41wK96QXCug==",           "hmac_key": "YpOFpHqXhvfFpNKb6L+ccg==",           "name": "6c12f4af-43f7-4d76-8958-9292fdd53791"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-49fda50e-74ff-48f6-baf2-67696146af46",       "uuid": "virtualservice-49fda50e-74ff-48f6-baf2-67696146af46",       "version": 104,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 500860           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.501834",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.152075",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     },     {       "marked_for_delete": false,       "name": "app2-hello-world",       "redis_db": 4,       "redis_port": 5028,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "wjSOyT5LjUMo5oX3ENxQ4A==",           "hmac_key": "xMMEyTNyI3do43+U1YhRDg==",           "name": "817a2bd1-b266-4139-a445-571bac4859c4"         },         {           "aes_key": "wWgDb0VwdO4/VKGcrUEAIg==",           "hmac_key": "JC/n/5aixldiLs/02tY/KA==",           "name": "fb2c259f-cd42-484c-bd9b-c494792668d8"         },         {           "aes_key": "rv2HHzZ/wOEDMz+/w7Lf0w==",           "hmac_key": "GarDQDRErsvsPfGEN4ZX9w==",           "name": "e0a9ea79-013d-458d-acde-b6234396503f"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-7695c9c4-7f97-476b-8142-f2c8f6f4f157",       "uuid": "virtualservice-7695c9c4-7f97-476b-8142-f2c8f6f4f157",       "version": 95,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 506179           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.506916",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.206311",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     },     {       "marked_for_delete": false,       "name": "app3-avi",       "redis_db": 3,       "redis_port": 5022,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "LKhJkMz1d0QxJZ+MoHPB3A==",           "hmac_key": "5E4KmhQ9ZY3zyKHMcyvL3g==",           "name": "d42161c9-588b-4d98-822f-61225d588292"         },         {           "aes_key": "QzhZkvkC7a5z06KpFdEq3g==",           "hmac_key": "Omkbt87f55g7UHecS48TqQ==",           "name": "e1da7307-5df6-4b6b-88af-e97e3273b91a"         },         {           "aes_key": "JTHfux0KCQ7QlzWMSmSXWw==",           "hmac_key": "G9+XJOrWVfHOV9zLW1jMEA==",           "name": "fbf4362b-b355-4ff0-bc2f-54e113f92d2a"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-35f07621-8dba-4519-aedb-3778d9eb5221",       "uuid": "virtualservice-35f07621-8dba-4519-aedb-3778d9eb5221",       "version": 95,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 597782           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.598057",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.148840",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     },     {       "marked_for_delete": false,       "name": "app4-waf",       "redis_db": 14,       "redis_port": 5023,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "xHqSn3QXlOxEGWQE7fqE3A==",           "hmac_key": "tVHiMl0jtDdeTIlC0K5r6A==",           "name": "fa36d84c-e72c-4608-9d3f-54e611f98bae"         },         {           "aes_key": "zg8wtBwN9kTOBWXIKfgPtA==",           "hmac_key": "J79ScdgnANmpL56E7F9+Ag==",           "name": "7e5614c9-3324-48af-b6d4-7477605832af"         },         {           "aes_key": "709BUzMn/dcbjs+DEIvsOA==",           "hmac_key": "JIlFFPFEYoMDIcObT4v7DA==",           "name": "f22a84ab-b95d-4f3a-9999-3e4ea92f2acd"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-b34ed388-0524-43a7-bfaf-42aae5cce83f",       "uuid": "virtualservice-b34ed388-0524-43a7-bfaf-42aae5cce83f",       "version": 97,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 632659           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.633071",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.209616",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     },     {       "marked_for_delete": false,       "name": "app5-hello-world",       "redis_db": 4,       "redis_port": 5022,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "SfXIZwIXo/MFWyXyYB2YPQ==",           "hmac_key": "fJavdJXmJENJG0RDWTZhwg==",           "name": "2c019d4b-ab89-4ae6-ac21-52525d589728"         },         {           "aes_key": "O2UGw/Cu5PlE+dJTmTA5rA==",           "hmac_key": "MmH9LqMKSr0bq6Bf4ozOmQ==",           "name": "18a0346a-8a78-486a-ac59-784762691a87"         },         {           "aes_key": "oGTl2yFIiMxEkEqGyJ42tQ==",           "hmac_key": "Ywprlusg1cwQJMGLWRWSlA==",           "name": "76195883-393f-437b-bf21-f069fad41937"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-3a5f90fe-7969-4f7b-b16e-4379f2d17c28",       "uuid": "virtualservice-3a5f90fe-7969-4f7b-b16e-4379f2d17c28",       "version": 95,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 515314           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.516130",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.147532",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     },     {       "marked_for_delete": false,       "name": "app6-avi",       "redis_db": 0,       "redis_port": 5024,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "Hwg2dJLu9rKlHzDkmSZb7A==",           "hmac_key": "PVh49ZQqljdQV7lIhqkJcg==",           "name": "4ace3c16-cc1c-4b52-a921-b9d8eca4d8fd"         },         {           "aes_key": "gulH3ntTlZ1Ifn2GAb8jRA==",           "hmac_key": "2WFzFfNBqMfCW4QXFrSpyQ==",           "name": "81da0991-11ae-4166-a712-62c3bd30c496"         },         {           "aes_key": "y6y2iS2TaAu36MrawnXhqg==",           "hmac_key": "pZJHR7BJVc7cmSjljpsZ/Q==",           "name": "d46a87a7-c70b-4dc6-b928-5beb2ba05ba6"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-1bd0d6dd-f09c-4175-b37e-011d6bcd0afd",       "uuid": "virtualservice-1bd0d6dd-f09c-4175-b37e-011d6bcd0afd",       "version": 95,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 531635           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.532244",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.150511",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     },     {       "marked_for_delete": false,       "name": "app7-waf",       "redis_db": 8,       "redis_port": 5024,       "self_se_election": false,       "tls_ticket_key": [         {           "aes_key": "osGoppbJg+KTnAMq7oTLlQ==",           "hmac_key": "22KqeQSN78SBy7QxS18xwQ==",           "name": "d32442cc-ed47-472d-be3c-fd912c3497d2"         },         {           "aes_key": "LsclLFVGYh+C3AVfnMx7rQ==",           "hmac_key": "+DCUgY4X531s5/1mBQNm7Q==",           "name": "cc5912d6-40b9-4b1b-8666-af97d099e663"         },         {           "aes_key": "Ty2KBQWpKsXxbiiF73xEAg==",           "hmac_key": "HEgsOGk/kSrjAnCCFiuKJg==",           "name": "201ce71b-3201-4bb2-bb21-e42b2dc70278"         }       ],       "url": "https://10.41.134.178/api/virtualservice/virtualservice-7b3f30e9-dd0a-42bc-aa67-23142172e8bb",       "uuid": "virtualservice-7b3f30e9-dd0a-42bc-aa67-23142172e8bb",       "version": 96,       "vip_runtime": [         {           "first_se_assigned_time": {             "secs": 1699018076,             "usecs": 492179           },           "num_additional_se": 0,           "requested_resource": {             "num_se": 2,             "num_standby_se": 0           },           "se_list": [             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-03 13:27:56.493755",               "is_portchannel": false,               "is_primary": true,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.210",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",               "sec_idx": 0,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.210",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:9b:3d",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:9b:3d",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:9b:3d",                   "type": "VNIC_TYPE_BE"                 }               ]             },             {               "active_on_cloud": true,               "active_on_se": true,               "admin_down_requested": false,               "attach_ip_in_progress": false,               "cloud_programming_done": true,               "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",               "delete_in_progress": false,               "detach_ip_in_progress": false,               "incarnation": "2023-11-18 12:31:02.205777",               "is_portchannel": false,               "is_primary": false,               "is_standby": false,               "memory": 1971,               "mgmt_ip": {                 "addr": "100.100.11.212",                 "type": "V4"               },               "scaleout_in_progress": false,               "se_programming_done": true,               "se_ready_in_progress": false,               "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",               "sec_idx": 1,               "vcpus": 2,               "vip6_subnet_mask": 128,               "vip_intf_list": [                 {                   "is_portchannel": false,                   "vip_intf_ip": {                     "addr": "100.100.31.211",                     "type": "V4"                   },                   "vip_intf_mac": "00:50:56:96:6c:3a",                   "vlan_id": 0                 }               ],               "vip_intf_mac": "00:50:56:96:6c:3a",               "vip_subnet_mask": 32,               "vlan_id": 0,               "vnic": [                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_FE"                 },                 {                   "mac": "00:50:56:96:6c:3a",                   "type": "VNIC_TYPE_BE"                 }               ]             }           ],           "vip_id": "0"         }       ]     }   ] }
+  HTTP GET API call to https://10.41.134.178/api/virtualservice
+{
+  "count": 8,
+  "results": [
+    {
+      "_last_modified": "1699017712995930",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-96b4c8fa-563d-4f15-924c-a25dca289b14",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app-dns",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-debc8d54-d751-4b9d-a68a-33df6cd57212",
+      "redis_db": 0,
+      "redis_port": 5028,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-622b653f-5154-4dd5-9401-07b9c9e30967",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 53,
+          "port_range_end": 53
+        }
+      ],
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "ZsfmBbYESvo8LiamlkXNNw==",
+          "hmac_key": "MXOiBih+ziq8kG1B5VzKjA==",
+          "name": "7dbdc31a-9ff6-49d9-ac20-3c1ba6629318"
+        },
+        {
+          "aes_key": "95tpg8er8Y0ASi1e5eLVtw==",
+          "hmac_key": "8n3uOMpHsTzFb6osWQh8Gg==",
+          "name": "fafd4f48-99c9-4325-b83b-7e9e037ff25b"
+        },
+        {
+          "aes_key": "EnTcBEpnC5lFaFn/7D+kUw==",
+          "hmac_key": "Jq5Eh/XnEmaCSHHnKI89Uw==",
+          "name": "7658c6ee-671a-40cd-9c1e-b213526c09d0"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-ce1210d6-01a1-4fd2-8fb5-3c89d22e9312",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-ce1210d6-01a1-4fd2-8fb5-3c89d22e9312",
+      "version": 90,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018079,
+            "usecs": 575999
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 1,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:59.576534",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.211",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-005056963cfd",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.32.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:cc",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:cc",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:cc",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:cc",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-ee38ca3e-1286-4099-9199-da6a0c073384",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-da5f9679-d483-4179-9cf4-26d6591d6f41",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017714667082",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app1-hello-world-nsx-group",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-537cf4f3-fa1c-444e-9b01-c1a7c7e28e5d",
+      "redis_db": 3,
+      "redis_port": 5021,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "dsS1xZFLPcbCnsGElxDpWg==",
+          "hmac_key": "Gu9JLSp8iBkIhsmzaFHLdw==",
+          "name": "d4adb42f-983f-4439-85a6-8e753f6e14a1"
+        },
+        {
+          "aes_key": "0+EaBtWxseai/4xPZlkZig==",
+          "hmac_key": "kvT8j3CbFAPh5ghPUnpHtw==",
+          "name": "64845d85-32b9-4c1c-9dca-c70b63d7cadb"
+        },
+        {
+          "aes_key": "9sgNGc0qhxs41wK96QXCug==",
+          "hmac_key": "YpOFpHqXhvfFpNKb6L+ccg==",
+          "name": "6c12f4af-43f7-4d76-8958-9292fdd53791"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-49fda50e-74ff-48f6-baf2-67696146af46",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-49fda50e-74ff-48f6-baf2-67696146af46",
+      "version": 104,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 500860
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.501834",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.152075",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-a92e277e-7721-4305-90fc-d2d7b0ec561a",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017715631946",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app2-hello-world",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-8006f279-8c87-4320-a828-c73406826b1c",
+      "redis_db": 4,
+      "redis_port": 5028,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "wjSOyT5LjUMo5oX3ENxQ4A==",
+          "hmac_key": "xMMEyTNyI3do43+U1YhRDg==",
+          "name": "817a2bd1-b266-4139-a445-571bac4859c4"
+        },
+        {
+          "aes_key": "wWgDb0VwdO4/VKGcrUEAIg==",
+          "hmac_key": "JC/n/5aixldiLs/02tY/KA==",
+          "name": "fb2c259f-cd42-484c-bd9b-c494792668d8"
+        },
+        {
+          "aes_key": "rv2HHzZ/wOEDMz+/w7Lf0w==",
+          "hmac_key": "GarDQDRErsvsPfGEN4ZX9w==",
+          "name": "e0a9ea79-013d-458d-acde-b6234396503f"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-7695c9c4-7f97-476b-8142-f2c8f6f4f157",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-7695c9c4-7f97-476b-8142-f2c8f6f4f157",
+      "version": 95,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 506179
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.506916",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.206311",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-68e92c4e-550f-4791-b22f-49390b974e20",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017716427034",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app3-avi",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-cb46368d-2b13-4e71-8b54-767654e8891c",
+      "redis_db": 3,
+      "redis_port": 5022,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "LKhJkMz1d0QxJZ+MoHPB3A==",
+          "hmac_key": "5E4KmhQ9ZY3zyKHMcyvL3g==",
+          "name": "d42161c9-588b-4d98-822f-61225d588292"
+        },
+        {
+          "aes_key": "QzhZkvkC7a5z06KpFdEq3g==",
+          "hmac_key": "Omkbt87f55g7UHecS48TqQ==",
+          "name": "e1da7307-5df6-4b6b-88af-e97e3273b91a"
+        },
+        {
+          "aes_key": "JTHfux0KCQ7QlzWMSmSXWw==",
+          "hmac_key": "G9+XJOrWVfHOV9zLW1jMEA==",
+          "name": "fbf4362b-b355-4ff0-bc2f-54e113f92d2a"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-35f07621-8dba-4519-aedb-3778d9eb5221",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-35f07621-8dba-4519-aedb-3778d9eb5221",
+      "version": 95,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 597782
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.598057",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.148840",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-02f9c60a-281e-4fa6-8720-f8f91c7f44eb",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017717242794",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app4-waf",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-256f53e7-e3c7-4a9d-9200-c60e46fa40e1",
+      "redis_db": 14,
+      "redis_port": 5023,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "xHqSn3QXlOxEGWQE7fqE3A==",
+          "hmac_key": "tVHiMl0jtDdeTIlC0K5r6A==",
+          "name": "fa36d84c-e72c-4608-9d3f-54e611f98bae"
+        },
+        {
+          "aes_key": "zg8wtBwN9kTOBWXIKfgPtA==",
+          "hmac_key": "J79ScdgnANmpL56E7F9+Ag==",
+          "name": "7e5614c9-3324-48af-b6d4-7477605832af"
+        },
+        {
+          "aes_key": "709BUzMn/dcbjs+DEIvsOA==",
+          "hmac_key": "JIlFFPFEYoMDIcObT4v7DA==",
+          "name": "f22a84ab-b95d-4f3a-9999-3e4ea92f2acd"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-b34ed388-0524-43a7-bfaf-42aae5cce83f",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-b34ed388-0524-43a7-bfaf-42aae5cce83f",
+      "version": 97,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 632659
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.633071",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.209616",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-cfc7bca4-9eb2-4be7-adbb-a3dc78761f6a",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017717929797",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app5-hello-world",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-88019239-7e08-49ac-adce-fe909ec388ae",
+      "redis_db": 4,
+      "redis_port": 5022,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "SfXIZwIXo/MFWyXyYB2YPQ==",
+          "hmac_key": "fJavdJXmJENJG0RDWTZhwg==",
+          "name": "2c019d4b-ab89-4ae6-ac21-52525d589728"
+        },
+        {
+          "aes_key": "O2UGw/Cu5PlE+dJTmTA5rA==",
+          "hmac_key": "MmH9LqMKSr0bq6Bf4ozOmQ==",
+          "name": "18a0346a-8a78-486a-ac59-784762691a87"
+        },
+        {
+          "aes_key": "oGTl2yFIiMxEkEqGyJ42tQ==",
+          "hmac_key": "Ywprlusg1cwQJMGLWRWSlA==",
+          "name": "76195883-393f-437b-bf21-f069fad41937"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-3a5f90fe-7969-4f7b-b16e-4379f2d17c28",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-3a5f90fe-7969-4f7b-b16e-4379f2d17c28",
+      "version": 95,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 515314
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.516130",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.147532",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-71e433d6-1845-4473-886c-d0a4adb7298a",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017718798898",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app6-avi",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-5ebdde94-44eb-4660-bba8-1d744dc2c2f5",
+      "redis_db": 0,
+      "redis_port": 5024,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "Hwg2dJLu9rKlHzDkmSZb7A==",
+          "hmac_key": "PVh49ZQqljdQV7lIhqkJcg==",
+          "name": "4ace3c16-cc1c-4b52-a921-b9d8eca4d8fd"
+        },
+        {
+          "aes_key": "gulH3ntTlZ1Ifn2GAb8jRA==",
+          "hmac_key": "2WFzFfNBqMfCW4QXFrSpyQ==",
+          "name": "81da0991-11ae-4166-a712-62c3bd30c496"
+        },
+        {
+          "aes_key": "y6y2iS2TaAu36MrawnXhqg==",
+          "hmac_key": "pZJHR7BJVc7cmSjljpsZ/Q==",
+          "name": "d46a87a7-c70b-4dc6-b928-5beb2ba05ba6"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-1bd0d6dd-f09c-4175-b37e-011d6bcd0afd",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-1bd0d6dd-f09c-4175-b37e-011d6bcd0afd",
+      "version": 95,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 531635
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.532244",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.150511",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-a364be58-264d-4466-acf9-0924a45d9b3b",
+      "weight": 1
+    },
+    {
+      "_last_modified": "1699017719596800",
+      "active_standby_se_tag": "ACTIVE_STANDBY_SE_1",
+      "advertise_down_vs": false,
+      "allow_invalid_client_cert": false,
+      "analytics_policy": {
+        "all_headers": true,
+        "client_insights": "NO_INSIGHTS",
+        "full_client_logs": {
+          "duration": 0,
+          "enabled": true,
+          "throttle": 10
+        },
+        "metrics_realtime_update": {
+          "duration": 0,
+          "enabled": true
+        },
+        "significant_log_throttle": 0,
+        "udf_log_throttle": 10
+      },
+      "analytics_profile_ref": "https://10.41.134.178/api/analyticsprofile/analyticsprofile-94c6c38c-3491-449d-b172-5fcde91aef49",
+      "application_profile_ref": "https://10.41.134.178/api/applicationprofile/applicationprofile-e0855460-9d8a-46d7-aced-0e825f021b5d",
+      "bulk_sync_kvcache": false,
+      "close_client_conn_on_config_update": false,
+      "cloud_ref": "https://10.41.134.178/api/cloud/cloud-5c778f68-71b5-47dc-8ba5-73263ddfa565",
+      "cloud_type": "CLOUD_NONE",
+      "delay_fairness": false,
+      "east_west_placement": false,
+      "enable_autogw": true,
+      "enable_rhi": false,
+      "enabled": true,
+      "error_page_profile_ref": "https://10.41.134.178/api/errorpageprofile/errorpageprofile-bb84e713-e5af-42e9-9ca0-8ba4fcd5b287",
+      "flow_dist": "LOAD_AWARE",
+      "flow_label_type": "NO_LABEL",
+      "ign_pool_net_reach": false,
+      "limit_doser": false,
+      "marked_for_delete": false,
+      "max_cps_per_client": 0,
+      "name": "app7-waf",
+      "network_profile_ref": "https://10.41.134.178/api/networkprofile/networkprofile-8afa676d-cb8a-4e82-b9fe-42a3de8e85f3",
+      "pool_ref": "https://10.41.134.178/api/pool/pool-d12e6745-27b5-4586-874c-cea921ba3ff2",
+      "redis_db": 8,
+      "redis_port": 5024,
+      "remove_listening_port_on_vs_down": false,
+      "scaleout_ecmp": true,
+      "se_group_ref": "https://10.41.134.178/api/serviceenginegroup/serviceenginegroup-abff02cd-6a34-4614-a39e-f3fb0317811a",
+      "self_se_election": false,
+      "services": [
+        {
+          "enable_http2": false,
+          "enable_ssl": false,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 80,
+          "port_range_end": 80
+        },
+        {
+          "enable_http2": false,
+          "enable_ssl": true,
+          "horizon_internal_ports": false,
+          "is_active_ftp_data_port": false,
+          "port": 443,
+          "port_range_end": 443
+        }
+      ],
+      "ssl_key_and_certificate_refs": [
+        "https://10.41.134.178/api/sslkeyandcertificate/sslkeyandcertificate-8e787f75-629b-4305-8d9c-e77211075f4e"
+      ],
+      "ssl_profile_ref": "https://10.41.134.178/api/sslprofile/sslprofile-034f395a-57db-4576-a7e5-887dc8b09eef",
+      "ssl_sess_cache_avg_size": 1024,
+      "tenant_ref": "https://10.41.134.178/api/tenant/admin",
+      "tls_ticket_key": [
+        {
+          "aes_key": "osGoppbJg+KTnAMq7oTLlQ==",
+          "hmac_key": "22KqeQSN78SBy7QxS18xwQ==",
+          "name": "d32442cc-ed47-472d-be3c-fd912c3497d2"
+        },
+        {
+          "aes_key": "LsclLFVGYh+C3AVfnMx7rQ==",
+          "hmac_key": "+DCUgY4X531s5/1mBQNm7Q==",
+          "name": "cc5912d6-40b9-4b1b-8666-af97d099e663"
+        },
+        {
+          "aes_key": "Ty2KBQWpKsXxbiiF73xEAg==",
+          "hmac_key": "HEgsOGk/kSrjAnCCFiuKJg==",
+          "name": "201ce71b-3201-4bb2-bb21-e42b2dc70278"
+        }
+      ],
+      "traffic_enabled": true,
+      "type": "VS_TYPE_NORMAL",
+      "url": "https://10.41.134.178/api/virtualservice/virtualservice-7b3f30e9-dd0a-42bc-aa67-23142172e8bb",
+      "use_bridge_ip_as_vip": false,
+      "use_vip_as_snat": false,
+      "uuid": "virtualservice-7b3f30e9-dd0a-42bc-aa67-23142172e8bb",
+      "version": 96,
+      "vh_type": "VS_TYPE_VH_SNI",
+      "vip_runtime": [
+        {
+          "first_se_assigned_time": {
+            "secs": 1699018076,
+            "usecs": 492179
+          },
+          "num_additional_se": 0,
+          "requested_resource": {
+            "num_se": 2,
+            "num_standby_se": 0
+          },
+          "se_list": [
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-03 13:27:56.493755",
+              "is_portchannel": false,
+              "is_primary": true,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.210",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696cca0",
+              "sec_idx": 0,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.210",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:9b:3d",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:9b:3d",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:9b:3d",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            },
+            {
+              "active_on_cloud": true,
+              "active_on_se": true,
+              "admin_down_requested": false,
+              "attach_ip_in_progress": false,
+              "cloud_programming_done": true,
+              "cloud_programming_status": "Virtual Service IP is reachable in the Cloud",
+              "delete_in_progress": false,
+              "detach_ip_in_progress": false,
+              "incarnation": "2023-11-18 12:31:02.205777",
+              "is_portchannel": false,
+              "is_primary": false,
+              "is_standby": false,
+              "memory": 1971,
+              "mgmt_ip": {
+                "addr": "100.100.11.212",
+                "type": "V4"
+              },
+              "scaleout_in_progress": false,
+              "se_programming_done": true,
+              "se_ready_in_progress": false,
+              "se_ref": "https://10.41.134.178/api/serviceengine/se-00505696e799",
+              "sec_idx": 1,
+              "vcpus": 2,
+              "vip6_subnet_mask": 128,
+              "vip_intf_list": [
+                {
+                  "is_portchannel": false,
+                  "vip_intf_ip": {
+                    "addr": "100.100.31.211",
+                    "type": "V4"
+                  },
+                  "vip_intf_mac": "00:50:56:96:6c:3a",
+                  "vlan_id": 0
+                }
+              ],
+              "vip_intf_mac": "00:50:56:96:6c:3a",
+              "vip_subnet_mask": 32,
+              "vlan_id": 0,
+              "vnic": [
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_FE"
+                },
+                {
+                  "mac": "00:50:56:96:6c:3a",
+                  "type": "VNIC_TYPE_BE"
+                }
+              ]
+            }
+          ],
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.178/api/vrfcontext/vrfcontext-bae959f8-5560-4526-aac4-9e9304a07c45",
+      "vsvip_ref": "https://10.41.134.178/api/vsvip/vsvip-7070146e-323f-4dbb-9e61-1150e4cb4a02",
+      "weight": 1
+    }
+  ]
+}
+
+200    API call was successful

@@ -1,0 +1,63 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "_last_modified": "1699860101001184",
+      "cloud_ref": "https://10.41.134.130/api/cloud/cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+      "dns_info": [
+        {
+          "algorithm": "DNS_RECORD_RESPONSE_CONSISTENT_HASH",
+          "fqdn": "ansible-app1.vcenter.alb.com",
+          "ttl": 100,
+          "type": "DNS_RECORD_A"
+        }
+      ],
+      "east_west_placement": false,
+      "name": "vsvip-ansible-app1",
+      "tenant_ref": "https://10.41.134.130/api/tenant/admin",
+      "url": "https://10.41.134.130/api/vsvip/vsvip-b29f20a8-0a18-41c2-9544-8212beaedf26",
+      "uuid": "vsvip-b29f20a8-0a18-41c2-9544-8212beaedf26",
+      "vip": [
+        {
+          "auto_allocate_floating_ip": false,
+          "auto_allocate_ip": true,
+          "auto_allocate_ip_type": "V4_ONLY",
+          "avi_allocated_fip": false,
+          "avi_allocated_vip": false,
+          "discovered_networks": [
+            {
+              "network_ref": "https://10.41.134.130/api/network/dvportgroup-185-cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+              "subnet": [
+                {
+                  "ip_addr": {
+                    "addr": "100.64.131.0",
+                    "type": "V4"
+                  },
+                  "mask": 24
+                }
+              ]
+            }
+          ],
+          "enabled": true,
+          "ip_address": {
+            "addr": "100.64.131.79",
+            "type": "V4"
+          },
+          "ipam_network_subnet": {
+            "network_ref": "https://10.41.134.130/api/network/dvportgroup-185-cloud-83612feb-3a29-4588-b5ba-cd99290bf1d6",
+            "subnet": {
+              "ip_addr": {
+                "addr": "100.64.131.0",
+                "type": "V4"
+              },
+              "mask": 24
+            }
+          },
+          "prefix_length": 32,
+          "vip_id": "0"
+        }
+      ],
+      "vrf_context_ref": "https://10.41.134.130/api/vrfcontext/vrfcontext-1a223f3f-b79b-4a39-9bc5-c72ccfd382c0"
+    }
+  ]
+}

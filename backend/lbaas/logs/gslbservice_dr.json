@@ -1,0 +1,73 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "_last_modified": "1700649159571198",
+      "controller_health_status_enabled": true,
+      "domain_names": [
+        "lbaas.gslb.alb.com"
+      ],
+      "down_response": {
+        "type": "GSLB_SERVICE_DOWN_RESPONSE_NONE"
+      },
+      "enabled": true,
+      "groups": [
+        {
+          "algorithm": "GSLB_ALGORITHM_ROUND_ROBIN",
+          "enabled": true,
+          "manual_resume": false,
+          "members": [
+            {
+              "cluster_uuid": "cluster-96ec2e6f-2afd-488c-aa5f-7989f2d77246",
+              "enabled": true,
+              "ip": {
+                "addr": "100.64.131.80",
+                "type": "V4"
+              },
+              "preference_order": 1,
+              "ratio": 1,
+              "resolve_fqdn_to_v6": false,
+              "vs_uuid": "virtualservice-44b1c187-7d45-4b7b-9588-0f1287d8050d"
+            }
+          ],
+          "name": "pool1",
+          "priority": 20
+        },
+        {
+          "algorithm": "GSLB_ALGORITHM_ROUND_ROBIN",
+          "enabled": true,
+          "manual_resume": false,
+          "members": [
+            {
+              "cluster_uuid": "cluster-d3dec54b-3c26-4adc-8926-1e571fec00e0",
+              "enabled": true,
+              "ip": {
+                "addr": "100.100.131.217",
+                "type": "V4"
+              },
+              "preference_order": 1,
+              "ratio": 1,
+              "resolve_fqdn_to_v6": false,
+              "vs_uuid": "virtualservice-36072028-25a1-4049-ba36-8e9dc86419da"
+            }
+          ],
+          "name": "pool2",
+          "priority": 0
+        }
+      ],
+      "health_monitor_scope": "GSLB_SERVICE_HEALTH_MONITOR_ALL_MEMBERS",
+      "is_federated": true,
+      "min_members": 0,
+      "name": "lbaas",
+      "pool_algorithm": "GSLB_SERVICE_ALGORITHM_PRIORITY",
+      "resolve_cname": false,
+      "site_persistence_enabled": false,
+      "tenant_ref": "https://10.41.134.130/api/tenant/tenant-8c2dd21c-a0f0-4cf1-9df6-2dda458a2028",
+      "topology_policy_enabled": false,
+      "url": "https://10.41.134.130/api/gslbservice/gslbservice-0d311338-1ec4-44a5-bf15-e7c899273676",
+      "use_edns_client_subnet": true,
+      "uuid": "gslbservice-0d311338-1ec4-44a5-bf15-e7c899273676",
+      "wildcard_match": false
+    }
+  ]
+}

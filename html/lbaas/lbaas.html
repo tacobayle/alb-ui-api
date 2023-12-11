@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Create VS</title>
+</head>
+<body>
+<div><h1>Create a new HTTP VIP in multiple DCs including GSLB</h1></div>
+<hr>
+<div><h2>Form</h2></div>
+<form class="form">
+    <div>
+        <label for="app_profile">Choose an application profile:</label>
+        <select name="app_profile" id="app_profile">
+            <option value="internal-private">internal-private</option>
+            <option value="public-DMZ">public-DMZ</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <tr>
+            <label for="dns_host">GSLB FQDN</label>
+            <input name="dns_host" id="dns_host" type="text" value="demo"/>
+            <label for="gslb_domain">.</label>
+            <select name="gslb_domain" id="gslb_domain">
+                <option value="gslb.alb.com">gslb.alb.com</option>
+            </select>
+        </tr>
+    </div>
+    <br>
+    <div>
+        <label for="gslb">Is GSLB enabled?</label>
+        <select name="gslb" id="gslb">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="gslb_algorithm">GSLB use case:</label>
+        <select name="gslb_algorithm" id="gslb_algorithm">
+            <option value="active-active">active-active</option>
+            <option value="disaster-recovery">disaster-recovery</option>
+            <option value="geo-location">geo-location</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="waf">Is WAF enabled?</label>
+        <select name="waf" id="waf">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>
+    </div>
+    <table>
+        <thead class="table-dark">
+        <tr>
+            <th scope="col"><h2>DC1</h2></th>
+            <th scope="col"><h2>DC2</h2></th>
+        </tr>
+        </thead>
+        <tbody id="table_body_form">
+        <tr>
+            <td>
+                <label for="dc1">Is DC1 enabled?</label>
+                <select name="dc1" id="dc1">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </td>
+            <td>
+                <label for="dc2">Is DC2 enabled?</label>
+                <select name="dc2" id="dc2">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="servers_ips_dc1">Comma separated Servers IPs</label>
+                <input name="servers_ips_dc1" id="servers_ips_dc1" type="text" value="100.64.130.203,100.64.130.204"/>
+            </td>
+            <td>
+                <label for="servers_ips_dc2">Comma separated Servers IPs</label>
+                <input name="servers_ips_dc2" id="servers_ips_dc2" type="text" value="100.100.21.11,100.100.21.12"/>        </tr>
+        </tbody>
+    </table>
+    <br>
+    <button>Submit</button>
+</form>
+<br>
+<hr>
+<br>
+<div><h2>Results</h2></div>
+<div class="container">
+    <table class="table" style="width:100%">
+        <thead class="table-dark">
+        <tr>
+            <th scope="col"><h3>Date</h3></th>
+            <th scope="col"><h3>Controller IP</h3></th>
+            <th scope="col"><h3>Object Type</h3></th>
+            <th scope="col"><h3>Object Url</h3></th>
+            <th scope="col"><h3>Object Status</h3></th>
+        </tr>
+        </thead>
+        <tbody id="table_body">
+        <tr>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

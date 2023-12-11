@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Show VS sharing the same SSL/TLS Certificate</title>
+</head>
+<body>
+  <div><h1>Show VS sharing the same SSL/TLS Certificate</h1></div>
+  <hr>
+  <div><h2>Form</h2></div>
+  <form class="form">
+      <div>
+          <label for="tls_cert_name">SSL/TLS Cert Name:</label>
+          <input name="tls_cert_name" id="tls_cert_name" type="text" value="System-Default-Cert"/>
+          <br>
+      </div>
+      <br>
+      <table>
+          <thead class="table-dark">
+          <tr>
+              <th scope="col"><h2>DC1</h2></th>
+              <th scope="col"><h2>DC2</h2></th>
+          </tr>
+          </thead>
+          <tbody id="table_body_form">
+          <tr>
+              <td>
+                  <label for="dc1">Is dc1 selected?</label>
+                  <select name="dc1" id="dc1">
+                      <option value="true">true</option>
+                      <option value="false">false</option>
+                  </select>
+              </td>
+              <td>
+                  <label for="dc2">Is dc2 selected?</label>
+                  <select name="dc2" id="dc2">
+                      <option value="true">true</option>
+                      <option value="false">false</option>
+                  </select>
+              </td>
+          </tr>
+          </tbody>
+      </table>
+      <button>Submit</button>
+  </form>
+  <br>
+  <br>
+  <hr>
+  <div><h2>Results</h2></div>
+  <br>
+  <div class="container">
+      <table class="table" style="width:100%">
+          <thead class="table-dark">
+              <tr>
+                  <th scope="col"><h3>Date</h3></th>
+                  <th scope="col"><h3>Controller IP</h3></th>
+                  <th scope="col"><h3>Tenant</h3></th>
+                  <th scope="col"><h3>VS Name</h3></th>
+                  <th scope="col"><h3>VS URL</h3></th>
+              </tr>
+          </thead>
+          <tbody id="table_body">
+              <tr>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

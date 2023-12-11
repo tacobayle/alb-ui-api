@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+username=$1
+password=$2
+ip=$3
+cert_name=$4
+#
+rm -f avi_cookie.txt
+rm -f results.json
+#
+curl_output=$(curl -s -k -X POST -H "Content-Type: application/json" -d "{\"username\": \"$username\", \"password\": \"$password\"}" -c avi_cookie.txt https://$ip/login)
+curl_cert=$(curl -s -k -X GET -H "Content-Type: application/json"  -b avi_cookie.txt https://$ip/api/sslkeyandcertificate)
+cert_short_uuid=$(echo $curl_cert | jq -c -r --arg cert_name "${cert_name}" '.results[] | select(.name == $cert_name) | .uuid')
+if [ -z "$cert_short_uuid" ] ; then
+  echo "[]" | jq -c -r . | tee results.json > /dev/null
+else
+  cert_full_uuid="https://${ip}/api/sslkeyandcertificate/${cert_short_uuid}"
+  curl_virtualservice=$(curl -s -k -X GET -H "Content-Type: application/json" -H "X-Avi-Tenant: *" -b avi_cookie.txt https://$ip/api/virtualservice)
+  echo $curl_virtualservice | jq -s -c -r --arg cert_uuid "${cert_full_uuid}" '.[].results[] |
+                                                            select( .ssl_key_and_certificate_refs != null ) |
+                                                            select (.ssl_key_and_certificate_refs[] == $cert_uuid) |
+                                                            {"name": .name, "uuid": .uuid, url: .url}' \
+                            | jq -s -c -r . | tee results.json > /dev/null
+#  jq . results.json
+fi

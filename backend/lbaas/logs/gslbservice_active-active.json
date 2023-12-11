@@ -1,0 +1,64 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "_last_modified": "1700642507716314",
+      "controller_health_status_enabled": true,
+      "domain_names": [
+        "app1.gslb.alb.com"
+      ],
+      "down_response": {
+        "type": "GSLB_SERVICE_DOWN_RESPONSE_NONE"
+      },
+      "enabled": true,
+      "groups": [
+        {
+          "algorithm": "GSLB_ALGORITHM_ROUND_ROBIN",
+          "enabled": true,
+          "manual_resume": false,
+          "members": [
+            {
+              "cluster_uuid": "cluster-96ec2e6f-2afd-488c-aa5f-7989f2d77246",
+              "enabled": true,
+              "ip": {
+                "addr": "100.64.131.80",
+                "type": "V4"
+              },
+              "preference_order": 1,
+              "ratio": 1,
+              "resolve_fqdn_to_v6": false,
+              "vs_uuid": "virtualservice-8fc13791-afa4-4c5e-90c4-55e7b0aedb7c"
+            },
+            {
+              "cluster_uuid": "cluster-d3dec54b-3c26-4adc-8926-1e571fec00e0",
+              "enabled": true,
+              "ip": {
+                "addr": "100.100.131.217",
+                "type": "V4"
+              },
+              "preference_order": 1,
+              "ratio": 1,
+              "resolve_fqdn_to_v6": false,
+              "vs_uuid": "virtualservice-b7d5e174-059d-4a9a-afe8-669f87498f21"
+            }
+          ],
+          "name": "pool1",
+          "priority": 10
+        }
+      ],
+      "health_monitor_scope": "GSLB_SERVICE_HEALTH_MONITOR_ALL_MEMBERS",
+      "is_federated": true,
+      "min_members": 0,
+      "name": "app1",
+      "pool_algorithm": "GSLB_SERVICE_ALGORITHM_PRIORITY",
+      "resolve_cname": false,
+      "site_persistence_enabled": false,
+      "tenant_ref": "https://10.41.134.130/api/tenant/tenant-8c2dd21c-a0f0-4cf1-9df6-2dda458a2028",
+      "topology_policy_enabled": false,
+      "url": "https://10.41.134.130/api/gslbservice/gslbservice-9008b6ca-b16a-4b95-b64e-52380dc5bc68",
+      "use_edns_client_subnet": true,
+      "uuid": "gslbservice-9008b6ca-b16a-4b95-b64e-52380dc5bc68",
+      "wildcard_match": false
+    }
+  ]
+}

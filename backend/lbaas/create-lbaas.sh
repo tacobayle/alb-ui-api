@@ -95,7 +95,6 @@ do
     network_url=$(echo $response_body | jq -c -r --arg network_name "$(echo $item | jq -c -r --arg app_type ${app_type} '.app_type[] | select( .name == $app_type ) | .network_name')" \
                                                  --arg cloud "${cloud_url}" \
                                                  '.results[] | select( .name == $network_name and .cloud_ref == $cloud) | .url')
-
     echo "  ${network_url}"
 
     echo "++++ retrieve service engine group url"

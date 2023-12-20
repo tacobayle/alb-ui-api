@@ -1,0 +1,38 @@
+{
+  "certificate": {
+    "certificate": "-----BEGIN CERTIFICATE-----\nMIIFmzCCA4OgAwIBAgIUVxdtf7rR4LxhVNJ5YuDT+gc9pYcwDQYJKoZIhvcNAQEL\nBQAwXTETMBEGA1UEAwwKTXkgUm9vdCBDQTELMAkGA1UEBhMCQVQxDzANBgNVBAgM\nBlZpZW5uYTEPMA0GA1UEBwwGVmllbm5hMRcwFQYDVQQKDA5NeU9yZ2FuaXNhdGlv\nbjAeFw0yMzEyMDgwODQwMzVaFw0yODEyMDcwODQwMzVaMF0xEzARBgNVBAMMCk15\nIFJvb3QgQ0ExCzAJBgNVBAYTAkFUMQ8wDQYDVQQIDAZWaWVubmExDzANBgNVBAcM\nBlZpZW5uYTEXMBUGA1UECgwOTXlPcmdhbmlzYXRpb24wggIiMA0GCSqGSIb3DQEB\nAQUAA4ICDwAwggIKAoICAQC2SoZ2L5zdBuV0GjjjNo+449WhX+mPg0wsJuhUiwrJ\nbG5w+wUHaoJ75RlnIEsnL55GdDdi/awdVyYTQbXCOZ/kiIgM8UFFK22l/Mx19U3U\nu+fDGCvaDZQNP4wB37Gly4KZJEKJMvBwS+LH4Bi+5a6LyR2nRe45NIjsXd/RLKJ0\nHp8McUgOX6lWXssfPx6R2JzQa+JyH3nUGJnDvmISoO+6uDSY6zV6czc+o3falOBo\nSEL79yzm1naS17B1dbX4CSwFpa44TB8E69ydxq0f1jnIK69GnVXtIpJlyCl5QKMH\nQIXcFabbGkC22bsd3qHiRGNJoOydhqLqhUaZyHQjBTrDeH5dZdXm1iPa9AGbHfBe\nE8GzX8X9Ykhrl+ElWcYwBuxTYGKdp18wuIBUSx8Q0qbaVFTNpMEPmEaMiOCoYUw7\nPWgFXeW9ZALDyDTvxdCuBaNifqIfdg06ETP9rUwgQBmadUx/PhYwDghmpuCjFxtt\nPytxoRRoMfwD76IzpvN+ejb+Z189HH8cfxVAXhBjaj4BpvwYcv1piEseh2GktMUl\noT06SWGoIFHymHhqxCZZf/PRibU4e98D9g2lr90N8fGMsj8DH4qDm0VHJxKyr6XC\noruLTJNbwUsJA+ehr4szTDlrN7ppF58GvL2er4HSW/ofq4Hiul701aT0EM4Jn3qd\nVwIDAQABo1MwUTAdBgNVHQ4EFgQUjjQfAQFUiekUa6Q1SvpF/1+DDjwwHwYDVR0j\nBBgwFoAUjjQfAQFUiekUa6Q1SvpF/1+DDjwwDwYDVR0TAQH/BAUwAwEB/zANBgkq\nhkiG9w0BAQsFAAOCAgEAIZa9LTMv6eOajctbN8eKPDssWed5htJUl8o2ueh/wF9l\nNi6FrKpwZZIr9DDF1Boe4CcdWPy8sitHe2jkeE5PIxrqSydlSt+6YN5xk5zX4V9F\nkSNUAE7Nf12PqW0mfk6kR2dNRMzk+DshjdmnmVx3jxXCQ6NvtgYJt7YpC3WN8yMu\n4bgkxKHlts6BUMHfP79q2uiix+i2pjzIFOgoc1hnfXoXK50DQB5qBgOtPLA7Er6W\nAhABl6CtjnAID4kT1qREREVlrme92c1T/XB2XLAb6WzRHFzKMTVupexVVA8tudcF\nmdlJABhOwLqjl0WBZKTY/H0YjI5VccIyIqCs8XtYVpYM8wyiN2I/gRIL7vyhtssd\n0M2eZkYphm0q9b71fubmGbbnPUSXhe/vnPSGWJHSl9RbA0LcmUdWmDBXpGEuQ0SV\nGC6OEH+K+Zmwi7w+NOC8X/E3usiiZI+mSebHodT7xaQpIZQbD/7x0lJ5EQXVueos\nweqDwMqqTBYdDydShp+4TVIQbiSS44Zloh7fPgIu9tmimyLfEDbUrHgXhC33XAnn\nuBb9hT71iFPppqKONzVhJVkq+awkuA18o/CMuxdCysDZ8scAENWapVAPaRwCOmAm\nd5vF0O0/MJTKBpKYoLp4T4dZN9nkjf8TjrSyzXguXCL5fQzEAmRbN59hxfezTKA=\n-----END CERTIFICATE-----",
+    "subject": {
+      "common_name": "My Root CA",
+      "organization": "MyOrganisation",
+      "locality": "Vienna",
+      "state": "Vienna",
+      "country": "AT",
+      "distinguished_name": "C=AT, ST=Vienna, L=Vienna, O=MyOrganisation, CN=My Root CA"
+    },
+    "not_after": "2028-12-07 08:40:35",
+    "issuer": {}
+  },
+  "key_params": {
+    "algorithm": "SSL_KEY_ALGORITHM_RSA",
+    "rsa_params": {
+      "key_size": "SSL_KEY_4096_BITS",
+      "exponent": 65537
+    }
+  },
+  "status": "SSL_CERTIFICATE_FINISHED",
+  "format": "SSL_PEM",
+  "certificate_base64": false,
+  "key_base64": false,
+  "enable_ocsp_stapling": false,
+  "ocsp_config": {
+    "ocsp_req_interval": 86400,
+    "url_action": "OCSP_RESPONDER_URL_FAILOVER",
+    "failed_ocsp_jobs_retry_interval": 3600,
+    "max_tries": 10
+  },
+  "import_key_to_hsm": false,
+  "is_federated": false,
+  "type": "SSL_CERTIFICATE_TYPE_CA",
+  "ocsp_response_info": {},
+  "name": "test"
+}

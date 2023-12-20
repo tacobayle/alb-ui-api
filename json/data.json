@@ -28,9 +28,9 @@
     {
       "dc": "dc1",
       "controller_ip": "10.41.134.130",
-      "username": "automation",
+      "username": "lbaas",
       "password": "bb07c8668a645cb1c2bffaa422eded0e9514e580",
-      "version": "22.1.5",
+      "version": "22.1.4",
       "app_type": [
         {
           "name": "internal-private",
@@ -56,7 +56,7 @@
     {
       "dc": "dc2",
       "controller_ip": "10.41.134.178",
-      "username": "automation",
+      "username": "lbaas",
       "password": "f86bfaa5c2e2cdf4041b67ead2d3ec47e5a788c7",
       "version": "22.1.5",
       "app_type": [
@@ -95,5 +95,30 @@
     "prefix_pool": "pool",
     "prefix_vsvip": "vsvip",
     "prefix_vs": "vs"
+  },
+  "openssl": {
+    "directory": "../../openssl",
+    "ca": {
+      "name": "My_Root_CA",
+      "cn": "My Root CA",
+      "c": "FR",
+      "st": "Paris",
+      "l": "Paris",
+      "org": "MyOrganisation"
+    },
+    "app_certificates": [
+      {
+        "name": "My_App",
+        "cn": "My App",
+        "c": "FR",
+        "st": "Paris",
+        "l": "Paris",
+        "org": "MyOrganisation",
+        "san" : {
+          "dns": ["myserver1.local", "myserver2.local"],
+          "ips" : ["192.168.1.1", "192.168.1.2"]
+        }
+      }
+    ]
   }
 }

@@ -1,7 +1,7 @@
 {
   "gslb":
   {
-    "domain_name": ["gslb.alb.com"],
+    "domain_name": ["gslb.avi.com"],
     "gslb_leader": "10.41.134.130",
     "gslb_primary_dc": "dc1"
   },
@@ -49,7 +49,7 @@
           "tenant": "automation",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
-          "domain": "vcenter.alb.com",
+          "domain": "dc1.alb.com",
           "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
           "subnet_cidr": "100.64.131.0/24"
         }

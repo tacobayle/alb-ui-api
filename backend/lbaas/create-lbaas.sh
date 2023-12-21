@@ -1,14 +1,14 @@
 #!/bin/bash
 # with waf // active-active
-# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.alb.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.avi.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # with waf // geo-location
-# /bin/bash create-lbaas.sh internal-private demo true geo-location gslb.alb.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true geo-location gslb.avi.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # without waf // active-active
-# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.alb.com app_cert false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.avi.com app_cert false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # with waf // disaster-recovery
-# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.alb.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.avi.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # without waf // disaster-recovery
-# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.alb.com app_cert false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.avi.com app_cert false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 #
 jsonFile=../../json/data.json
 source ../../bash/alb/alb_api.sh

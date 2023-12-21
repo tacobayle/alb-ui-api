@@ -39,7 +39,7 @@
           "serviceenginegroup": "Default-Group",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
-          "domain": "vcenter.alb.com",
+          "domain": "dc1.alb.com",
           "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
           "subnet_cidr": "100.64.131.0/24"
         },

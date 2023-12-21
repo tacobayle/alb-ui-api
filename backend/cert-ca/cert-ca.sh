@@ -36,51 +36,51 @@ sudo cp ${directory}/${ca_name}.crt /var/www/html/ca-cert/${ca_name}.crt
 #
 #
 #
-#json_data='
-#{
-#  "certificate": {
-#    "certificate": "'$(awk '{printf "%s\\n", $0}' ${directory}/${ca_name}.crt)'"
-#  },
-#  "import_key_to_hsm": false,
-#  "is_federated": false,
-#  "type": "SSL_CERTIFICATE_TYPE_CA",
-#  "name": "'${CN}'"
-#}'
-##
-#tenant=$(jq -c -r --arg app_type ${app_type} '.global.app_type[] | select( .name == $app_type ) | .tenant' $jsonFile)
-#for item in $(jq -c -r .datacenters[] $jsonFile)
-#do
-#  dc_status=dc$count
-#  rm -f avi_cookie.txt
-#  rm -f results.json
+json_data='
+{
+  "certificate": {
+    "certificate": "'$(awk '{printf "%s\\n", $0}' ${directory}/${ca_name}.crt)'"
+  },
+  "import_key_to_hsm": false,
+  "is_federated": false,
+  "type": "SSL_CERTIFICATE_TYPE_CA",
+  "name": "'${CN}'"
+}'
 #
-#  if [[ $(eval "echo \"\$$dc_status\"") == "true" ]] ; then
-#
-#
-#    echo "------------------ DC$count"
-#    controller_ip=$(echo $item | jq -c -r .controller_ip)
-#    alb_version=$(echo $item | jq -c -r .version)
-#
-#    curl_login=$(curl -s -k -X POST -H "Content-Type: application/json" \
-#                                    -d "{\"username\": \"$(echo $item | jq -c -r .username)\", \"password\": \"$(echo $item | jq -c -r .password)\"}" \
-#                                    -c avi_cookie.txt https://${controller_ip}/login)
-#
-#    csrftoken=$(cat avi_cookie.txt | grep csrftoken | awk '{print $7}')
-#    avi_cookie_file="../../backend/cert-ca/avi_cookie.txt"
-#
-#    echo "++++ create cert CA"
-#    alb_api 2 1 "POST" "${avi_cookie_file}" "${csrftoken}" "${tenant}" "${alb_version}" "${json_data}" "${controller_ip}" "api/sslkeyandcertificate"
-#    if [[ $response_code == 2[0-9][0-9] ]] ; then
-#      sslkeyandcertificate_url=$(echo $response_body | jq -c -r .url)
-#      results_json=$(echo $results_json | jq '. += [{"date": "'$(date)'", "controller_ip": "'${controller_ip}'", "object_type": "sslkeyandcertificate", "url": "'${sslkeyandcertificate_url}'", "status": "created" }]')
-#    else
-#      results_json=$(echo $results_json | jq '. += [{"date": "'$(date)'", "controller_ip": "'${controller_ip}'", "object_type": "sslkeyandcertificate", "url": "na", "status": "error" }]')
-#    fi
-#  fi
-#
-#  ((count++))
-#done
-#
-#echo "------------------ Results"
-#
-#echo $results_json | tee results.json | jq .
+tenant=$(jq -c -r --arg app_type ${app_type} '.global.app_type[] | select( .name == $app_type ) | .tenant' $jsonFile)
+for item in $(jq -c -r .datacenters[] $jsonFile)
+do
+  dc_status=dc$count
+  rm -f avi_cookie.txt
+  rm -f results.json
+
+  if [[ $(eval "echo \"\$$dc_status\"") == "true" ]] ; then
+
+
+    echo "------------------ DC$count"
+    controller_ip=$(echo $item | jq -c -r .controller_ip)
+    alb_version=$(echo $item | jq -c -r .version)
+
+    curl_login=$(curl -s -k -X POST -H "Content-Type: application/json" \
+                                    -d "{\"username\": \"$(echo $item | jq -c -r .username)\", \"password\": \"$(echo $item | jq -c -r .password)\"}" \
+                                    -c avi_cookie.txt https://${controller_ip}/login)
+
+    csrftoken=$(cat avi_cookie.txt | grep csrftoken | awk '{print $7}')
+    avi_cookie_file="../../backend/cert-ca/avi_cookie.txt"
+
+    echo "++++ create cert CA"
+    alb_api 2 1 "POST" "${avi_cookie_file}" "${csrftoken}" "${tenant}" "${alb_version}" "${json_data}" "${controller_ip}" "api/sslkeyandcertificate"
+    if [[ $response_code == 2[0-9][0-9] ]] ; then
+      sslkeyandcertificate_url=$(echo $response_body | jq -c -r .url)
+      results_json=$(echo $results_json | jq '. += [{"date": "'$(date)'", "controller_ip": "'${controller_ip}'", "object_type": "sslkeyandcertificate", "url": "'${sslkeyandcertificate_url}'", "status": "created" }]')
+    else
+      results_json=$(echo $results_json | jq '. += [{"date": "'$(date)'", "controller_ip": "'${controller_ip}'", "object_type": "sslkeyandcertificate", "url": "na", "status": "error" }]')
+    fi
+  fi
+
+  ((count++))
+done
+
+echo "------------------ Results"
+
+echo $results_json | tee results.json | jq .

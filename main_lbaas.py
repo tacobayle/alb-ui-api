@@ -26,6 +26,7 @@ parser_create_vs_multiple_dcs.add_argument("dns_host", type=str, help="DNS host 
 parser_create_vs_multiple_dcs.add_argument("gslb", type=str, help="GSLB", required=True)
 parser_create_vs_multiple_dcs.add_argument("gslb_algorithm", type=str, help="GSLB Algorithm", required=True)
 parser_create_vs_multiple_dcs.add_argument("gslb_domain", type=str, help="GSLB Algorithm", required=True)
+parser_create_vs_multiple_dcs.add_argument("cert", type=str, help="Certificate Name", required=True)
 parser_create_vs_multiple_dcs.add_argument("waf", type=str, help="App Waf", required=True)
 parser_create_vs_multiple_dcs.add_argument("dc1", type=str, help="DC1 selected", required=True)
 parser_create_vs_multiple_dcs.add_argument("dc2", type=str, help="DC2 selected", required=True)
@@ -56,13 +57,14 @@ class create_vs_multiple_dcs(Resource):
         gslb = args_parser_create_vs_multiple_dcs['gslb']
         gslb_algorithm = args_parser_create_vs_multiple_dcs['gslb_algorithm']
         gslb_domain = args_parser_create_vs_multiple_dcs['gslb_domain']
+        cert = args_parser_create_vs_multiple_dcs['cert']
         waf = args_parser_create_vs_multiple_dcs['waf']
         dc1 = args_parser_create_vs_multiple_dcs['dc1']
         dc2 = args_parser_create_vs_multiple_dcs['dc2']
         servers_ips_dc1 = args_parser_create_vs_multiple_dcs['servers_ips_dc1']
         servers_ips_dc2 = args_parser_create_vs_multiple_dcs['servers_ips_dc2']
         folder='/home/ubuntu/alb-ui-api/backend/lbaas'
-        result=subprocess.call(['/bin/bash', 'create-lbaas.sh', app_profile, dns_host, gslb, gslb_algorithm, gslb_domain, waf, dc1, dc2, servers_ips_dc1, servers_ips_dc2], stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=folder)
+        result=subprocess.call(['/bin/bash', 'create-lbaas.sh', app_profile, dns_host, gslb, gslb_algorithm, gslb_domain, cert, waf, dc1, dc2, servers_ips_dc1, servers_ips_dc2], stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=folder)
         with open('/home/ubuntu/alb-ui-api/backend/lbaas/results.json', 'r') as results_json:
             results = json.load(results_json)
         return results, 201

@@ -12,14 +12,16 @@
         "tenant": "automation",
         "applicationpersistenceprofile": "System-Persistence-Client-IP",
         "applicationprofile": "System-Secure-HTTP",
-        "wafpolicy": "System-WAF-Policy"
+        "wafpolicy": "System-WAF-Policy",
+        "ssl_profile_ref": "System-Standard"
       },
       {
         "name": "public-DMZ",
         "tenant": "automation",
         "applicationpersistenceprofile": "System-Persistence-Client-IP",
         "applicationprofile": "System-Secure-HTTP",
-        "wafpolicy": "System-WAF-Policy"
+        "wafpolicy": "System-WAF-Policy",
+        "ssl_profile_ref": "System-Standard"
       }
     ]
   },
@@ -28,7 +30,7 @@
     {
       "dc": "dc1",
       "controller_ip": "10.41.134.130",
-      "username": "lbaas",
+      "username": "automation",
       "password": "bb07c8668a645cb1c2bffaa422eded0e9514e580",
       "version": "22.1.4",
       "app_type": [
@@ -56,7 +58,7 @@
     {
       "dc": "dc2",
       "controller_ip": "10.41.134.178",
-      "username": "lbaas",
+      "username": "automation",
       "password": "f86bfaa5c2e2cdf4041b67ead2d3ec47e5a788c7",
       "version": "22.1.5",
       "app_type": [
@@ -108,7 +110,7 @@
     },
     "app_certificates": [
       {
-        "name": "My_App",
+        "name": "app_cert",
         "cn": "My App",
         "c": "FR",
         "st": "Paris",

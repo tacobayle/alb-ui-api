@@ -1,14 +1,14 @@
 #!/bin/bash
 # with waf // active-active
-# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.alb.com true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.alb.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # with waf // geo-location
-# /bin/bash create-lbaas.sh internal-private demo true geo-location gslb.alb.com true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true geo-location gslb.alb.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # without waf // active-active
-# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.alb.com false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.alb.com app_cert false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # with waf // disaster-recovery
-# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.alb.com true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.alb.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # without waf // disaster-recovery
-# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.alb.com false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true disaster-recovery gslb.alb.com app_cert false true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 #
 jsonFile=../../json/data.json
 source ../../bash/alb/alb_api.sh
@@ -18,11 +18,12 @@ dns_host="${2}"
 gslb_enabled="${3}"
 gslb_algorithm="${4}"
 gslb_domain="${5}"
-waf="${6}"
-dc1="${7}"
-dc2="${8}"
-servers_ips_dc1="${9}"
-servers_ips_dc2="${10}"
+cert="${6}"
+waf="${7}"
+dc1="${8}"
+dc2="${9}"
+servers_ips_dc1="${10}"
+servers_ips_dc2="${11}"
 #
 global_prefix=$(jq -c -r .prefixes.global_prefix $jsonFile)
 global_prefix_pool=$(jq -c -r .prefixes.prefix_pool $jsonFile)
@@ -192,7 +193,8 @@ do
        "vsvip_ref": "'${vsvip_url}'",
        "pool_ref": "'${pool_url}'",
        "application_profile_ref": "'${applicationprofile_url}'",
-       "application_profile_ref": "'${applicationprofile_url}'",
+       "ssl_profile_ref": "/api/sslprofile/?name='$(jq -c -r --arg app_type ${app_type} '.global.app_type[] | select( .name == $app_type ) | .ssl_profile_ref' $jsonFile)'"
+       "ssl_key_and_certificate_refs": "/api/sslkeyandcertificate/?name='${cert}'"
        "services": [
          {
            "port": 80,

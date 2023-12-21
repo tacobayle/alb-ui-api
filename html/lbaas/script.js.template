@@ -7,7 +7,7 @@ formEl.addEventListener('submit', event => {
     console.log(json)
 
 
-fetch('http://10.41.135.46:5000/lbaas', {
+fetch('http://${ip_api}:5000/lbaas', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'

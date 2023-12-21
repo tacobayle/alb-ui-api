@@ -194,7 +194,7 @@ do
        "pool_ref": "'${pool_url}'",
        "application_profile_ref": "'${applicationprofile_url}'",
        "ssl_profile_ref": "/api/sslprofile/?name='$(jq -c -r --arg app_type ${app_type} '.global.app_type[] | select( .name == $app_type ) | .ssl_profile_ref' $jsonFile)'",
-       "ssl_key_and_certificate_refs": "/api/sslkeyandcertificate/?name='${cert}'",
+       "ssl_key_and_certificate_refs": ["/api/sslkeyandcertificate/?name='${cert}'"],
        "services": [
          {
            "port": 80,

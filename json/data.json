@@ -65,21 +65,21 @@
         {
           "name": "internal-private",
           "serviceenginegroup": "Default-Group",
-          "cloud": "dc1_nsx",
-          "cloud_type": "nsx",
-          "domain": "alb.com",
-          "network_name": "my-segment-vip-1",
-          "subnet_cidr": "100.100.131.0/24",
+          "cloud": "Default-Cloud",
+          "cloud_type": "vcenter",
+          "domain": "dc2.alb.com",
+          "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
+          "subnet_cidr": "100.64.131.0/24",
           "tier1": "my-tier1-A"
         },
         {
           "name": "public-DMZ",
           "serviceenginegroup": "Default-Group",
-          "cloud": "dc1_nsx",
-          "cloud_type": "nsx",
-          "domain": "alb.com",
-          "network_name": "my-segment-vip-1",
-          "subnet_cidr": "100.100.131.0/24",
+          "cloud": "Default-Cloud",
+          "cloud_type": "vcenter",
+          "domain": "dc2.alb.com",
+          "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
+          "subnet_cidr": "100.64.131.0/24",
           "tier1": "my-tier1-A"
         }
       ]

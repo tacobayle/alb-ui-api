@@ -101,7 +101,7 @@
   "openssl": {
     "directory": "../../openssl",
     "ca": {
-      "name": "My_Root_CA",
+      "name": "My-Root-CA",
       "cn": "My Root CA",
       "c": "FR",
       "st": "Paris",

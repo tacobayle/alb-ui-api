@@ -32,7 +32,7 @@
       "controller_ip": "10.41.134.130",
       "username": "automation",
       "password": "bb07c8668a645cb1c2bffaa422eded0e9514e580",
-      "version": "22.1.4",
+      "version": "22.1.5",
       "app_type": [
         {
           "name": "internal-private",
@@ -46,7 +46,6 @@
         {
           "name": "public-DMZ",
           "serviceenginegroup": "Default-Group",
-          "tenant": "automation",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
           "domain": "dc1.alb.com",

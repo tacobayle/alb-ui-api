@@ -115,6 +115,7 @@
         "st": "Paris",
         "l": "Paris",
         "org": "MyOrganisation",
+        "days": 730,
         "san" : {
           "dns": ["myserver1.local", "myserver2.local"],
           "ips" : ["192.168.1.1", "192.168.1.2"]

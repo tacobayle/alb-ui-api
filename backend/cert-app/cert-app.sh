@@ -26,6 +26,7 @@ do
   st=$(echo ${item} | jq -c -r .st)
   l=$(echo ${item} | jq -c -r .l)
   org=$(echo ${item} | jq -c -r .org)
+  days=$(echo ${item} | jq -c -r .days)
   openssl req -new -nodes -out ${directory}/${name}.csr -newkey rsa:4096 -keyout ${directory}/${name}.key -subj '/CN='${cn}'/C='${c}'/ST='${st}'/L='${l}'/O='${org}''
   echo 'authorityKeyIdentifier=keyid,issuer
   basicConstraints=CA:FALSE

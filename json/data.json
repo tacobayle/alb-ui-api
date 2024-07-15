@@ -32,25 +32,25 @@
       "controller_ip": "10.41.134.130",
       "username": "automation",
       "password": "bb07c8668a645cb1c2bffaa422eded0e9514e580",
-      "version": "22.1.5",
+      "version": "22.1.6",
       "app_type": [
         {
           "name": "internal-private",
           "serviceenginegroup": "Default-Group",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
-          "domain": "dc1.alb.com",
-          "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-          "subnet_cidr": "100.64.131.0/24"
+          "domain": "dc1.avi.com",
+          "network_name": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116",
+          "subnet_cidr": "100.64.133.0/24"
         },
         {
           "name": "public-DMZ",
           "serviceenginegroup": "Default-Group",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
-          "domain": "dc1.alb.com",
-          "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-          "subnet_cidr": "100.64.131.0/24"
+          "domain": "dc1.avi.com",
+          "network_name": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116",
+          "subnet_cidr": "100.64.133.0/24"
         }
       ]
     },
@@ -59,16 +59,16 @@
       "controller_ip": "10.41.134.178",
       "username": "automation",
       "password": "f86bfaa5c2e2cdf4041b67ead2d3ec47e5a788c7",
-      "version": "22.1.5",
+      "version": "22.1.6",
       "app_type": [
         {
           "name": "internal-private",
           "serviceenginegroup": "Default-Group",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
-          "domain": "dc2.alb.com",
-          "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-          "subnet_cidr": "100.64.131.0/24",
+          "domain": "dc2.avi.com",
+          "network_name": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116",
+          "subnet_cidr": "100.64.133.0/24",
           "tier1": "my-tier1-A"
         },
         {
@@ -76,9 +76,9 @@
           "serviceenginegroup": "Default-Group",
           "cloud": "Default-Cloud",
           "cloud_type": "vcenter",
-          "domain": "dc2.alb.com",
-          "network_name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-          "subnet_cidr": "100.64.131.0/24",
+          "domain": "dc2.avi.com",
+          "network_name": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116",
+          "subnet_cidr": "100.64.133.0/24",
           "tier1": "my-tier1-A"
         }
       ]

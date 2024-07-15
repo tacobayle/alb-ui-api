@@ -1,6 +1,6 @@
 #!/bin/bash
 # with waf // active-active
-# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.avi.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
+# /bin/bash create-lbaas.sh internal-private demo true active-active gslb.avi.com app_cert true true true 100.64.129.209,100.64.129.210 100.64.129.211,100.64.129.212
 # with waf // geo-location
 # /bin/bash create-lbaas.sh internal-private demo true geo-location gslb.avi.com app_cert true true true 100.64.130.203,100.64.130.204 100.100.21.11,100.100.21.12
 # without waf // active-active
